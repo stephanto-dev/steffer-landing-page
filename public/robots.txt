@@ -1,0 +1,39 @@
+# Steffer SEO Robots.txt
+# Controla o acesso de crawlers de mecanismos de busca
+
+# Google
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+Disallow: /private
+Crawl-delay: 0
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Disallow: /admin
+Disallow: /private
+Crawl-delay: 1
+
+# AI Answer Engines (ChatGPT, Perplexity, SearchGPT)
+User-agent: CCBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: YouBot
+Allow: /
+Crawl-delay: 1
+
+# Default for all other bots
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://steffer.com.br/sitemap.xml

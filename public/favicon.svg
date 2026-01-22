@@ -1,0 +1,13 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tiffany blue background -->
+  <rect width="200" height="200" fill="#27E8DC" rx="40"/>
+  
+  <!-- Steffer checkmark icon - Diamond with checkmark -->
+  <g transform="translate(50, 50)">
+    <!-- Outer diamond shape -->
+    <path d="M 50 10 L 90 50 L 50 90 L 10 50 Z" fill="none" stroke="#4D149D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Checkmark inside -->
+    <path d="M 30 50 L 45 65 L 70 35" fill="none" stroke="#4D149D" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
