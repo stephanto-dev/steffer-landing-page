@@ -22,7 +22,7 @@ type PostCard = {
 };
 
 export default async function BlogPage() {
-  const { isEnabled } = draftMode();
+  const { isEnabled } = await draftMode();
   const posts = await getClient(isEnabled).fetch<PostCard[]>(postsQuery);
 
   return (
@@ -34,10 +34,10 @@ export default async function BlogPage() {
             Blog
           </p>
           <h1 className="mt-3 text-4xl font-semibold text-foreground md:text-5xl">
-            Insights sobre dados, automacao e IA
+            Insights sobre dados, automação e IA
           </h1>
           <p className="mt-4 max-w-2xl text-base text-muted-foreground">
-            Publicacoes sobre estrategia, tecnologia e casos reais para acelerar
+            Publicações sobre estratégia, tecnologia e casos reais para acelerar
             crescimento.
           </p>
         </div>

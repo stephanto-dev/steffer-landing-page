@@ -14,5 +14,11 @@ export const postBySlugQuery = `*[_type == "post" && slug.current == $slug][0]{
   excerpt,
   coverImage,
   publishedAt,
+  _updatedAt,
   body
+}`;
+
+export const postSlugsQuery = `*[_type == "post" && defined(slug.current)]{
+  "slug": slug.current,
+  _updatedAt
 }`;

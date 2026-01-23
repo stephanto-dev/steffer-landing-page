@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { PortableText, type PortableTextBlock } from "@portabletext/react";
+import { PortableText, PortableTextBlock } from "@portabletext/react";
 import { format } from "date-fns";
 import { draftMode } from "next/headers";
 
@@ -19,6 +19,7 @@ type BlogPost = {
     asset?: { _ref: string };
   };
   publishedAt?: string;
+  _updatedAt?: string;
   body?: PortableTextBlock[];
 };
 
@@ -27,8 +28,10 @@ type BlogPostPageProps = {
   params: BlogPostParams | Promise<BlogPostParams>;
 };
 
-const resolveParams = async (params: BlogPostPageProps["params"]): Promise<BlogPostParams> => {
-  return await params;
+const resolveParams = async (
+  params: BlogPostPageProps["params"],
+): Promise<BlogPostParams> => {
+  return Promise.resolve(params);
 };
 
 const portableTextComponents = {
@@ -51,9 +54,7 @@ const portableTextComponents = {
   },
 };
 
-export async function generateMetadata({
-  params,
-}: BlogPostPageProps) {
+export async function generateMetadata({ params }: BlogPostPageProps) {
   const { slug } = await resolveParams(params);
   if (!slug) {
     return {};
@@ -64,22 +65,46 @@ export async function generateMetadata({
     postBySlugQuery,
     {
       slug,
-    }
+    },
   );
 
   if (!post) {
     return {};
   }
 
+  const baseUrl = "https://www.steffer.com.br";
+  const canonical = `${baseUrl}/blog/${slug}`;
+  const cover = post.coverImage
+    ? urlFor(post.coverImage).width(1200).height(630).url()
+    : undefined;
+  const description = post.excerpt || undefined;
+
   return {
     title: `${post.title} | Steffer`,
-    description: post.excerpt,
+    description,
+    alternates: {
+      canonical,
+    },
+    openGraph: {
+      title: post.title,
+      description,
+      url: canonical,
+      type: "article",
+      images: cover
+        ? [
+            {
+              url: cover,
+              width: 1200,
+              height: 630,
+              alt: post.title,
+            },
+          ]
+        : undefined,
+    },
   };
 }
 
-export default async function BlogPostPage({
-  params,
-}: BlogPostPageProps) {
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await resolveParams(params);
   if (!slug) {
     notFound();
@@ -90,7 +115,7 @@ export default async function BlogPostPage({
     postBySlugQuery,
     {
       slug,
-    }
+    },
   );
 
   if (!post) {
@@ -103,9 +128,27 @@ export default async function BlogPostPage({
   const publishedAt = post.publishedAt
     ? format(new Date(post.publishedAt), "dd/MM/yyyy")
     : null;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    image: cover ? [cover] : undefined,
+    datePublished: post.publishedAt,
+    dateModified: post._updatedAt || post.publishedAt,
+    author: {
+      "@type": "Organization",
+      name: "Steffer",
+      url: "https://www.steffer.com.br",
+    },
+  };
 
   return (
     <main className="min-h-screen bg-background">
+      <script
+        type="application/ld+json"
+        // JSON.stringify garante JSON valido sem precisar de sanitizacao manual.
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       <article className="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
         <div className="mb-8 space-y-4">
