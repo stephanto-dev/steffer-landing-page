@@ -58,6 +58,12 @@ export function Header() {
             >
               Home
             </Link>
+            <Link
+              href="/blog"
+              className="text-sm text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
+            >
+              Blog
+            </Link>
 
             <div
               className="relative group"
@@ -125,6 +131,13 @@ export function Header() {
               className="text-foreground/80 hover:text-primary transition-colors text-sm font-medium"
             >
               Home
+            </Link>
+            <Link
+              href="/blog"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-foreground/80 hover:text-primary transition-colors text-sm font-medium"
+            >
+              Blog
             </Link>
 
             <div className="flex flex-col gap-2">
