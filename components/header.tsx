@@ -1,53 +1,61 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Menu, X, ChevronDown } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
-import { useRouter, usePathname } from "next/navigation"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X, ChevronDown } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 
 export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [servicesOpen, setServicesOpen] = useState(false)
-  const router = useRouter()
-  const pathname = usePathname()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
   const scrollToSection = (id: string) => {
     // If we're on the homepage, just scroll
     if (pathname === "/") {
-      const element = document.getElementById(id)
+      const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" })
-        setMobileMenuOpen(false)
+        element.scrollIntoView({ behavior: "smooth" });
+        setMobileMenuOpen(false);
       }
     } else {
       // If we're on another page, navigate to homepage with hash
-      router.push(`/#${id}`)
-      setMobileMenuOpen(false)
+      router.push(`/#${id}`);
+      setMobileMenuOpen(false);
     }
-  }
+  };
 
   const services = [
-    { name: "Consultoria e Automação", href: "/servicos/consultoria-automacao" },
+    {
+      name: "Consultoria e Automação",
+      href: "/servicos/consultoria-automacao",
+    },
     { name: "Agentes de IA", href: "/servicos/agentes-ia" },
     { name: "GEO", href: "/servicos/geo" },
     { name: "Dados e Dashboards", href: "/servicos/dados-dashboards" },
-  ]
+  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+          <Link
+            href="/"
+            className="flex items-center gap-1 sm:gap-2 flex-shrink-0"
+          >
             <Image
-              src="/images/design-mode/%C3%ADcone%20Steffer.png"
+              src="/icone-steffer.png"
               alt="Logo Steffer - Consultoria de IA e Automação"
               width={32}
               height={32}
               className="w-7 h-7 sm:w-8 sm:h-8"
             />
-            <span className="text-lg sm:text-2xl font-bold text-primary truncate">STEFFER</span>
+            <span className="text-lg sm:text-2xl font-bold text-primary truncate">
+              STEFFER
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -58,6 +66,12 @@ export function Header() {
             >
               Home
             </Link>
+            <Link
+              href="/blog"
+              className="text-sm text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
+            >
+              Blog
+            </Link>
 
             <div
               className="relative group"
@@ -66,7 +80,10 @@ export function Header() {
             >
               <button className="flex items-center gap-1 text-sm text-foreground/80 hover:text-primary transition-colors py-2 whitespace-nowrap">
                 Serviços
-                <ChevronDown size={16} className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
+                <ChevronDown
+                  size={16}
+                  className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`}
+                />
               </button>
 
               {/* Invisible bridge to prevent dropdown from closing */}
@@ -126,6 +143,13 @@ export function Header() {
             >
               Home
             </Link>
+            <Link
+              href="/blog"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-foreground/80 hover:text-primary transition-colors text-sm font-medium"
+            >
+              Blog
+            </Link>
 
             <div className="flex flex-col gap-2">
               <button
@@ -177,5 +201,5 @@ export function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }
