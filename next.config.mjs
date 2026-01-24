@@ -13,6 +13,13 @@ const nextConfig = {
       { source: "/static/:path*", destination: "/studio/static/:path*" },
     ];
   },
+  // After Google OAuth, Sanity can redirect to /studio/studio (duplicated basePath). Redirect to /studio.
+  async redirects() {
+    return [
+      { source: "/studio/studio", destination: "/studio", permanent: false },
+      { source: "/studio/studio/:path*", destination: "/studio/:path*", permanent: false },
+    ];
+  },
 };
 
 export default nextConfig;
