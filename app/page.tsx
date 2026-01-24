@@ -15,6 +15,18 @@ import { Footer } from "@/components/footer"
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            url: "https://steffer.com.br/",
+            name: "Steffer",
+            alternateName: "Steffer | Consultoria de IA e Automação",
+          }),
+        }}
+      />
       <Header />
       <HeroSection />
       <CredibilitySection />
