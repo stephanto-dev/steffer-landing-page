@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "sanity build public/studio --config studio/sanity.config.ts -y && next build",
     "dev": "next dev",
     "lint": "eslint .",
     "start": "next start",
     "sanity:dev": "sanity dev --config studio/sanity.config.ts",
-    "sanity:build": "sanity build --config studio/sanity.config.ts"
+    "sanity:build": "sanity build public/studio --config studio/sanity.config.ts -y"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

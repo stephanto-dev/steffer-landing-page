@@ -14,6 +14,7 @@ export default defineConfig({
   projectId,
   dataset,
   apiVersion,
+  basePath: "/studio",
   plugins: [deskTool(), visionTool()],
   schema: {
     types: schemaTypes,
