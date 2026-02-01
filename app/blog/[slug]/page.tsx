@@ -66,6 +66,9 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
     {
       slug,
     },
+    {
+      next: { tags: ["blog", `post:${slug}`] },
+    },
   );
 
   if (!post) {
@@ -115,6 +118,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     postBySlugQuery,
     {
       slug,
+    },
+    {
+      next: { tags: ["blog", `post:${slug}`] },
     },
   );
 

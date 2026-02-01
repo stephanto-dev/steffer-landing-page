@@ -23,7 +23,13 @@ type PostCard = {
 
 export default async function BlogPage() {
   const { isEnabled } = await draftMode();
-  const posts = await getClient(isEnabled).fetch<PostCard[]>(postsQuery);
+  const posts = await getClient(isEnabled).fetch<PostCard[]>(
+    postsQuery,
+    {},
+    {
+      next: { tags: ["blog"] },
+    },
+  );
 
   return (
     <main className="min-h-screen bg-background">
