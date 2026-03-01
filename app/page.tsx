@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/hero-section"
 import { CredibilitySection } from "@/components/credibility-section"
 import { ProblemSection } from "@/components/problem-section"
 import { SolutionSection } from "@/components/solution-section"
+import { TekoSection } from "@/components/teko-section"
 import { DifferentialsSection } from "@/components/differentials-section"
 import { UseCasesSection } from "@/components/use-cases-section"
 import { SocialProofSection } from "@/components/social-proof-section"
@@ -32,6 +33,7 @@ export default function Home() {
       <CredibilitySection />
       <ProblemSection />
       <SolutionSection />
+      <TekoSection />
       <DifferentialsSection />
       <UseCasesSection />
       <SocialProofSection />

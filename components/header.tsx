@@ -73,6 +73,13 @@ export function Header() {
               Blog
             </Link>
 
+            <button
+              onClick={() => scrollToSection("produtos")}
+              className="text-sm text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
+            >
+              Produtos
+            </button>
+
             <div
               className="relative group"
               onMouseEnter={() => setServicesOpen(true)}
@@ -150,6 +157,13 @@ export function Header() {
             >
               Blog
             </Link>
+
+            <button
+              onClick={() => scrollToSection("produtos")}
+              className="text-foreground/80 hover:text-primary transition-colors text-sm font-medium text-left"
+            >
+              Produtos
+            </button>
 
             <div className="flex flex-col gap-2">
               <button
