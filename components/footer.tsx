@@ -145,8 +145,8 @@ export function Footer() {
         {/* Bottom */}
         <div className="pt-6 sm:pt-8 border-t border-border text-center text-foreground/60 text-xs sm:text-sm">
           <p>
-            © 2025 Steffer. Parceiros em automação e IA que geram resultados
-            reais.
+            © {new Date().getFullYear()} Steffer. Parceiros em automação e IA
+            que geram resultados reais.
           </p>
         </div>
       </div>
