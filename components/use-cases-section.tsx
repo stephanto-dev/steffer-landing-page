@@ -1,12 +1,40 @@
 "use client"
 
 import { useState } from "react"
-import { ShoppingCart, Briefcase, Megaphone, TrendingUp } from "lucide-react"
+import { ShoppingCart, Briefcase, Megaphone, TrendingUp, Stethoscope } from "lucide-react"
 
 export function UseCasesSection() {
   const [activeTab, setActiveTab] = useState(0)
 
   const tabs = [
+    {
+      icon: Stethoscope,
+      label: "Saúde / Médicos",
+      headline: "Gestão clínica sem o 'limbo administrativo'",
+      cases: [
+        {
+          emoji: "📅",
+          title: "Escalas Inteligentes",
+          description: "Substituição de planilhas por agendas digitais com validação automática",
+        },
+        {
+          emoji: "💬",
+          title: "Trocas via WhatsApp",
+          description: "Fluxo de troca de plantão integrado ao app que os médicos já usam",
+        },
+        {
+          emoji: "💰",
+          title: "Automação de Repasses",
+          description: "Cálculo automático de valores devidos por profissional e unidade",
+        },
+        {
+          emoji: "🏥",
+          title: "Conformidade e Auditoria",
+          description: "Histórico completo de presenças e alterações para segurança jurídica",
+        },
+      ],
+      result: "Hospital Felício Rocho atingiu 100% de adesão clínica e eliminou erros de repasse manual",
+    },
     {
       icon: ShoppingCart,
       label: "E-commerce",
