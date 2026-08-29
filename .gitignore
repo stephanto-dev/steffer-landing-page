@@ -29,3 +29,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# AI tooling (local per developer)
+.agents/
+.claude/
+.codex/
+.cursor/
+.gemini/
+.opencode/
+
+# Impeccable — cache and personal preferences
+.impeccable/config.local.json
+.impeccable/live/
+.impeccable/hook.cache.json
+.impeccable/hook.pending.json
+.impeccable/review/
