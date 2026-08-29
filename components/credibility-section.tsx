@@ -1,3 +1,5 @@
+import { Reveal } from "@/components/motion/reveal"
+
 export function CredibilitySection() {
   const stats = [
     {
@@ -15,21 +17,20 @@ export function CredibilitySection() {
   ]
 
   return (
-    <section className="py-12 sm:py-20 md:py-32 px-4 sm:px-6 bg-card">
+    <section id="credibilidade" className="py-12 sm:py-20 md:py-32 px-4 sm:px-6 bg-card">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-10 sm:mb-16 text-balance">
-          O problema real da implementação de IA
-        </h2>
+        <Reveal>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-10 sm:mb-16 text-balance">
+            O problema real da implementação de IA
+          </h2>
+        </Reveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-12">
+        <div className="flex flex-col sm:flex-row divide-y sm:divide-y-0 sm:divide-x divide-border max-w-4xl mx-auto mb-10 sm:mb-12">
           {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="bg-background border border-primary/20 rounded-lg sm:rounded-xl p-6 sm:p-8 text-center hover:border-primary/40 transition-all hover:shadow-lg hover:shadow-primary/10"
-            >
+            <Reveal key={index} index={index} className="flex-1 text-center px-4 sm:px-8 py-6 sm:py-0">
               <div className="text-4xl sm:text-6xl md:text-7xl font-bold text-primary mb-3 sm:mb-4">{stat.number}</div>
               <p className="text-sm sm:text-base text-foreground/70 leading-relaxed">{stat.description}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
 

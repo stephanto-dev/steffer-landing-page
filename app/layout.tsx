@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
@@ -38,12 +38,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Steffer" }],
   creator: "Steffer",
   publisher: "Steffer",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
-  themeColor: "#27E8DC",
   openGraph: {
     type: "website",
     locale: "pt_BR",
@@ -96,6 +90,13 @@ export const metadata: Metadata = {
     google: "your-google-site-verification-code",
     yandex: "your-yandex-verification-code",
   },
+}
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#f6f8fa",
 }
 
 export default function RootLayout({

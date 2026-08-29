@@ -33,10 +33,10 @@ export default function Home() {
       <CredibilitySection />
       <ProblemSection />
       <SolutionSection />
-      <TekoSection />
       <DifferentialsSection />
       <UseCasesSection />
       <SocialProofSection />
+      <TekoSection />
       <ComparisonSection />
       <DiagnosisSection />
       <FinalCTASection />

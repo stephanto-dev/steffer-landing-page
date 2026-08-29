@@ -57,9 +57,9 @@ export function HubSpotForm({ portalId, formId, region = "na1" }: HubSpotFormPro
       .hs-form input[type="tel"],
       .hs-form textarea,
       .hs-form select {
-        background-color: #0C1523 !important;
-        border: 1px solid rgba(39, 232, 220, 0.2) !important;
-        color: #E1E6ED !important;
+        background-color: var(--background) !important;
+        border: 1px solid var(--border) !important;
+        color: var(--foreground) !important;
         border-radius: 8px !important;
         padding: 12px 16px !important;
         font-size: 16px !important;
@@ -70,13 +70,14 @@ export function HubSpotForm({ portalId, formId, region = "na1" }: HubSpotFormPro
       .hs-form input:focus,
       .hs-form textarea:focus,
       .hs-form select:focus {
-        border-color: #27E8DC !important;
+        border-color: var(--primary) !important;
         outline: none !important;
-        box-shadow: 0 0 0 3px rgba(39, 232, 220, 0.1) !important;
+        box-shadow: 0 0 0 3px rgba(11, 203, 191, 0.15) !important;
       }
 
       .hs-form label {
-        color: rgba(225, 230, 237, 0.8) !important;
+        color: var(--foreground) !important;
+        opacity: 0.8 !important;
         font-size: 14px !important;
         font-weight: 500 !important;
         margin-bottom: 8px !important;
@@ -84,8 +85,8 @@ export function HubSpotForm({ portalId, formId, region = "na1" }: HubSpotFormPro
       }
 
       .hs-button {
-        background-color: #27E8DC !important;
-        color: #0B0E12 !important;
+        background-color: var(--primary) !important;
+        color: var(--primary-foreground) !important;
         border: none !important;
         border-radius: 8px !important;
         padding: 14px 32px !important;
@@ -93,23 +94,23 @@ export function HubSpotForm({ portalId, formId, region = "na1" }: HubSpotFormPro
         font-weight: 600 !important;
         cursor: pointer !important;
         transition: all 0.3s ease !important;
-        box-shadow: 0 0 20px rgba(39, 232, 220, 0.3) !important;
+        box-shadow: 0 8px 24px -6px rgba(11, 203, 191, 0.35) !important;
         width: 100% !important;
       }
 
       .hs-button:hover {
         transform: translateY(-2px) !important;
-        box-shadow: 0 0 30px rgba(39, 232, 220, 0.5) !important;
+        box-shadow: 0 12px 32px -6px rgba(11, 203, 191, 0.45) !important;
       }
 
       .hs-error-msg {
-        color: #ff6b6b !important;
+        color: var(--destructive) !important;
         font-size: 13px !important;
         margin-top: 4px !important;
       }
 
       .hs-form-required {
-        color: #27E8DC !important;
+        color: var(--primary) !important;
       }
 
       .hs-form fieldset {
@@ -121,12 +122,12 @@ export function HubSpotForm({ portalId, formId, region = "na1" }: HubSpotFormPro
       }
 
       .hs-form .hs-field-desc {
-        color: rgba(206, 215, 227, 0.66) !important;
+        color: var(--muted-foreground) !important;
         font-size: 13px !important;
       }
 
       .submitted-message {
-        color: #27E8DC !important;
+        color: var(--primary) !important;
         font-size: 18px !important;
         text-align: center !important;
         padding: 40px 20px !important;

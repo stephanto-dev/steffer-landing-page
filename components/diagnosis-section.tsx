@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { CheckCircle, Flame, Clock } from "lucide-react"
+import { Reveal } from "@/components/motion/reveal"
 
 export function DiagnosisSection() {
   const scrollToSection = (id: string) => {
@@ -40,13 +41,15 @@ export function DiagnosisSection() {
       className="py-12 md:py-20 lg:py-32 px-4 sm:px-6 bg-gradient-to-br from-card-secondary via-background to-card-secondary"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-balance">
-          Comece com um diagnóstico gratuito
-        </h2>
+        <Reveal>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-balance">
+            Comece com um diagnóstico gratuito
+          </h2>
+        </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-start md:items-center">
           {/* Left Column - Benefits */}
-          <div className="space-y-6 sm:space-y-8">
+          <Reveal className="space-y-6 sm:space-y-8">
             <div>
               <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">O que você recebe:</h3>
               <div className="space-y-3 sm:space-y-4">
@@ -71,25 +74,29 @@ export function DiagnosisSection() {
                 IA falham. Começamos pelo diagnóstico porque tecnologia sem estratégia é só mais uma despesa.
               </p>
             </div>
-          </div>
+          </Reveal>
 
           {/* Right Column - CTA */}
-          <div className="bg-card border border-primary/30 rounded-lg sm:rounded-2xl p-6 sm:p-8 md:p-12 text-center">
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center mb-6 sm:mb-8">
-              <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-center justify-center">
+          <Reveal index={1} className="bg-card border border-primary/30 rounded-lg sm:rounded-2xl p-6 sm:p-8 md:p-12 text-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 justify-center mb-6 sm:mb-8">
+              <div className="inline-flex items-center gap-2 justify-center">
+                <span className="relative flex h-2 w-2 flex-shrink-0">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+                </span>
                 <Flame className="h-4 w-4 text-primary flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-semibold text-primary">Apenas 20 vagas/mês</span>
+                <span className="text-sm font-semibold text-foreground">Apenas 20 vagas/mês</span>
               </div>
-              <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-center justify-center">
+              <div className="inline-flex items-center gap-2 justify-center">
                 <Clock className="h-4 w-4 text-primary flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-semibold text-primary">Resposta em 24h</span>
+                <span className="text-sm font-semibold text-foreground">Resposta em 24h</span>
               </div>
             </div>
 
             <Button
               size="lg"
               onClick={() => scrollToSection("contato")}
-              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary font-semibold text-base sm:text-lg px-6 sm:px-12 py-4 sm:py-6 h-auto w-full mb-6 sm:mb-8 active:scale-95 transition-transform"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary font-semibold h-14 px-8 text-base sm:text-lg w-full mb-6 sm:mb-8 active:scale-95 transition-transform"
             >
               Agendar consultoria  
             </Button>
@@ -112,7 +119,7 @@ export function DiagnosisSection() {
                 <span>Primeira conversa em até 24h</span>
               </p>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>
