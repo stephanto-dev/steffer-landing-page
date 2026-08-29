@@ -17,7 +17,7 @@ export function ContactSection() {
             </p>
           </div>
 
-          <div className="border border-border rounded-2xl p-8 md:p-12 shadow-xl bg-slate-300 px-0 py-0">
+          <div className="border border-border rounded-2xl p-8 md:p-12 shadow-xl bg-card">
             {HUBSPOT_PORTAL_ID && HUBSPOT_FORM_ID ? (
               <HubSpotForm portalId={HUBSPOT_PORTAL_ID} formId={HUBSPOT_FORM_ID} region="na1" />
             ) : (

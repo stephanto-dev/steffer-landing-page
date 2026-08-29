@@ -5,32 +5,42 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Custom Steffer brand colors for dark mode design */
-  --background: #0b0e12;
-  --foreground: #e1e6ed;
-  --card: #0c191c;
-  --card-foreground: #e1e6ed;
-  --card-secondary: #0c1523;
-  --popover: #0c191c;
-  --popover-foreground: #e1e6ed;
-  --primary: #27e8dc;
-  --primary-foreground: #0b0e12;
+  /* Steffer brand colors for light mode design.
+     Tiffany blue is the confirmed brand identity — --primary is now the
+     exact same value as --primary-bright (#27e8dc), by explicit request,
+     so there is one consistent blue site-wide instead of two tones. This
+     fails WCAG text contrast on the light background (~1.4:1 vs the 4.5:1
+     normally required) — a deliberate, informed trade-off, not an
+     oversight. --primary-foreground flips to dark text so buttons filled
+     with --primary stay legible; text/icons using --primary directly on
+     the light page background do not have that safety net. */
+  --background: #f6f8fa;
+  --foreground: #101826;
+  --card: #ffffff;
+  --card-foreground: #101826;
+  --card-secondary: #eef2f6;
+  --popover: #ffffff;
+  --popover-foreground: #101826;
+  --primary: #0bcbbf;
+  --primary-foreground: #0b1220;
+  --primary-bright: #27e8dc;
+  --primary-bright-foreground: #0b1220;
   --secondary: #0e3262;
-  --secondary-foreground: #e1e6ed;
-  --muted: #1a1f2e;
-  --muted-foreground: rgba(225, 230, 237, 0.6);
+  --secondary-foreground: #ffffff;
+  --muted: #eef2f6;
+  --muted-foreground: #4b5768;
   --accent: #4d149d;
-  --accent-foreground: #e1e6ed;
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: rgba(39, 232, 220, 0.2);
-  --input: rgba(39, 232, 220, 0.2);
-  --ring: #27e8dc;
-  --chart-1: #27e8dc;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: rgba(14, 50, 98, 0.14);
+  --input: rgba(14, 50, 98, 0.14);
+  --ring: #0bcbbf;
+  --chart-1: #0bcbbf;
   --chart-2: #4d149d;
   --chart-3: #0e3262;
-  --chart-4: #e1e6ed;
-  --chart-5: #0c191c;
+  --chart-4: #27e8dc;
+  --chart-5: #101826;
   --radius: 0.75rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
@@ -89,6 +99,8 @@
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-primary-bright: var(--primary-bright);
+  --color-primary-bright-foreground: var(--primary-bright-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
@@ -126,17 +138,52 @@
   body {
     @apply bg-background text-foreground;
   }
+  button:not(:disabled) {
+    cursor: pointer;
+  }
 }
 
-/* Custom glow effect for CTAs */
+/* Elevation shadow for primary CTAs — offset + blur, not a zero-offset glow */
 .glow-primary {
-  box-shadow: 0 0 20px rgba(39, 232, 220, 0.3), 0 0 40px rgba(39, 232, 220, 0.1);
+  box-shadow: 0 8px 24px -6px rgba(11, 203, 191, 0.35);
 }
 
 .glow-primary:hover {
-  box-shadow: 0 0 30px rgba(39, 232, 220, 0.5), 0 0 60px rgba(39, 232, 220, 0.2);
+  box-shadow: 0 12px 32px -6px rgba(11, 203, 191, 0.45);
+}
+
+/* Reserved for the single primary hero action — a slow breathing glow,
+   not repeated on every CTA on the page. */
+@keyframes breathe-glow {
+  0%,
+  100% {
+    box-shadow: 0 8px 24px -6px rgba(11, 203, 191, 0.35);
+  }
+  50% {
+    box-shadow: 0 10px 32px -4px rgba(11, 203, 191, 0.55);
+  }
+}
+
+.glow-primary-breathing {
+  animation: breathe-glow 3.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow-primary-breathing {
+    animation: none;
+  }
+}
+
+/* For buttons placed on the dark accent/secondary CTA bands, where the
+   bright tiffany (--primary-bright) is used instead of --primary */
+.glow-primary-bright {
+  box-shadow: 0 8px 24px -6px rgba(39, 232, 220, 0.35);
+}
+
+.glow-primary-bright:hover {
+  box-shadow: 0 12px 32px -6px rgba(39, 232, 220, 0.45);
 }
 
 .glow-accent {
-  box-shadow: 0 0 20px rgba(77, 20, 157, 0.3);
+  box-shadow: 0 8px 24px -6px rgba(77, 20, 157, 0.25);
 }

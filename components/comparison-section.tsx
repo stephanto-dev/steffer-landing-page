@@ -2,6 +2,7 @@
 
 import { Card } from "@/components/ui/card"
 import { Check, X } from "lucide-react"
+import { Reveal } from "@/components/motion/reveal"
 
 const comparisons = [
   {
@@ -46,15 +47,16 @@ export function ComparisonSection() {
     <section className="py-12 sm:py-20 md:py-32 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         {/* Title */}
-        <div className="text-center mb-10 sm:mb-16">
+        <Reveal className="text-center mb-10 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-balance">
             Steffer vs. <span className="text-primary">Outras Soluções</span>
           </h2>
           <p className="text-base sm:text-lg text-foreground/70 max-w-2xl mx-auto text-pretty px-2">
             Compare e entenda por que somos a escolha certa para sua empresa
           </p>
-        </div>
+        </Reveal>
 
+        <Reveal>
         <Card className="overflow-hidden bg-background/50 border-primary/20">
           <div className="overflow-x-auto">
             <table className="w-full min-w-max sm:min-w-0">
@@ -129,6 +131,7 @@ export function ComparisonSection() {
             </table>
           </div>
         </Card>
+        </Reveal>
 
         {/* Bottom CTA */}
         <div className="text-center mt-6 sm:mt-8 px-2">

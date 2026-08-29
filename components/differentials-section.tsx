@@ -1,4 +1,9 @@
 import { Target, Brain, CheckCircle, Users, MessageCircle, BarChart3 } from "lucide-react"
+import { Reveal } from "@/components/motion/reveal"
+
+// Cards render statically (no per-card entrance animation): they carry
+// hover-reactive border/shadow styles, and a translating or fading-in
+// element under a resting cursor flickers the hover state on and off.
 
 export function DifferentialsSection() {
   const differentials = [
@@ -37,7 +42,9 @@ export function DifferentialsSection() {
   return (
     <section id="sobre" className="py-20 md:py-32 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-balance">Por que escolher a Steffer?</h2>
+        <Reveal>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-balance">Por que escolher a Steffer?</h2>
+        </Reveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {differentials.map((diff, index) => {

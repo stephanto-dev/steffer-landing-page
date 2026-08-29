@@ -46,7 +46,7 @@ export function DadosHero() {
                 size="lg"
                 variant="outline"
                 onClick={() => scrollToSection("casos")}
-                className="border-primary/50 text-foreground hover:bg-primary/10 font-semibold"
+                className="border-primary/50 text-foreground hover:bg-primary/10 hover:text-foreground font-semibold"
               >
                 Casos de sucesso
               </Button>
