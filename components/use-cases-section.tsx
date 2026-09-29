@@ -178,7 +178,7 @@ export function UseCasesSection() {
       <div className="max-w-7xl mx-auto">
         <Reveal>
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-balance">
-            Automações que transformam negócios
+            Nossas especialidades
           </h2>
         </Reveal>
 

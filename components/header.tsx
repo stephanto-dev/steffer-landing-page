@@ -30,6 +30,11 @@ export function Header() {
 
   const services = [
     {
+      name: "Desenvolvimento de software",
+      href: "/servicos/desenvolvimento-de-software",
+    },
+    { name: "Sites e landing pages", href: "/servicos/sites-e-landing-pages" },
+    {
       name: "Consultoria e Automação",
       href: "/servicos/consultoria-automacao",
     },
@@ -65,6 +70,12 @@ export function Header() {
               className="text-sm text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
             >
               Home
+            </Link>
+            <Link
+              href="/sobre"
+              className="text-sm text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
+            >
+              Sobre
             </Link>
             <Link
               href="/blog"
@@ -112,12 +123,6 @@ export function Header() {
             </div>
 
             <button
-              onClick={() => scrollToSection("sobre")}
-              className="text-sm text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
-            >
-              Sobre
-            </button>
-            <button
               onClick={() => scrollToSection("contato")}
               className="text-sm text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
             >
@@ -149,6 +154,13 @@ export function Header() {
               className="text-foreground/80 hover:text-primary transition-colors text-sm font-medium"
             >
               Home
+            </Link>
+            <Link
+              href="/sobre"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-foreground/80 hover:text-primary transition-colors text-sm font-medium"
+            >
+              Sobre
             </Link>
             <Link
               href="/blog"
@@ -193,12 +205,6 @@ export function Header() {
               )}
             </div>
 
-            <button
-              onClick={() => scrollToSection("sobre")}
-              className="text-foreground/80 hover:text-primary transition-colors text-sm font-medium text-left"
-            >
-              Sobre
-            </button>
             <button
               onClick={() => scrollToSection("contato")}
               className="text-foreground/80 hover:text-primary transition-colors text-sm font-medium text-left"

@@ -167,7 +167,8 @@ export function HeroSection() {
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 text-balance leading-tight animate-fade-in-up">
-          A revolução da IA chegou e a <span className="text-primary">oportunidade de participar está passando</span>
+          Tecnologia que se adapta ao seu negócio.<br />
+          <span className="text-primary">Não o contrário.</span>
         </h1>
 
         <p className="text-base sm:text-lg md:text-xl text-foreground/70 mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed text-pretty animate-fade-in-up">

@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://steffer.com.br/",
   },
-  title: "Steffer | Consultoria de IA e Automação para Pequenos Empreendedores",
+  title: "Steffer | Tecnologia sob medida para o seu negócio",
   description:
-    "Transforme processos manuais em produtividade escalável. Automatizamos o tédio para você focar no lucro. 87% dos empreendedores conhecem IA, mas apenas 14% a usam efetivamente.",
+      "Consultoria e desenvolvimento de tecnologia sob medida. Automação, IA, sistemas e dados que se adaptam ao seu processo, não o contrário.",
   keywords: [
     "consultoria de IA",
     "automação de processos",
@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     "atendimento automatizado",
     "RPA",
     "implementação de IA",
+    "desenvolvimento de software",
+    "sites institucionais",
+    "dashboards de BI",
   ],
   authors: [{ name: "Steffer" }],
   creator: "Steffer",
@@ -42,9 +45,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: "https://steffer.com.br",
-    title: "Steffer | Consultoria de IA e Automação para Pequenos Empreendedores",
+    title: "Steffer | Tecnologia sob medida para o seu negócio",
     description:
-      "Transforme processos manuais em produtividade escalável. Automatizamos o tédio para você focar no lucro. 87% dos empreendedores conhecem IA, mas apenas 14% a usam efetivamente.",
+      "Consultoria e desenvolvimento de tecnologia sob medida. Automação, IA, sistemas e dados que se adaptam ao seu processo, não o contrário.",
     siteName: "Steffer",
     images: [
       {
@@ -60,9 +63,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@steffer",
     creator: "@steffer",
-    title: "Steffer | Consultoria de IA e Automação para Pequenos Empreendedores",
+    title: "Steffer | Tecnologia sob medida para o seu negócio",
     description:
-      "Transforme processos manuais em produtividade escalável. Automatizamos o tédio para você focar no lucro.",
+      "Consultoria e desenvolvimento de tecnologia sob medida. Automação, IA, sistemas e dados que se adaptam ao seu processo, não o contrário.",
     images: ["https://steffer.com.br/og-image.png"],
   },
   robots: {
