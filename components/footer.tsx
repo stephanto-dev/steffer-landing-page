@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Mail, MessageCircle } from "lucide-react";
 
 export function Footer() {
@@ -86,12 +87,12 @@ export function Footer() {
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("sobre")}
+                <Link
+                  href="/sobre"
                   className="text-sm sm:text-base text-foreground/70 hover:text-primary transition-colors"
                 >
                   Sobre
-                </button>
+                </Link>
               </li>
               <li>
                 <button

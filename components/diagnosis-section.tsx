@@ -31,7 +31,7 @@ export function DiagnosisSection() {
     },
     {
       title: "Valor Real",
-      description: "Diagnóstico com valor de R$ 5.000 — totalmente grátis",
+      description: "Diagnóstico com valor de R$ 5.000, totalmente grátis",
     },
   ]
 

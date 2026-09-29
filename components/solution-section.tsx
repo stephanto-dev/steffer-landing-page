@@ -1,8 +1,10 @@
 "use client"
 
-import { Search, Zap, Wrench } from "lucide-react"
+import Link from "next/link"
+import { Search, Zap, Wrench, Code2, Globe, Bot, BarChart3 } from "lucide-react"
 import { motion, useReducedMotion } from "framer-motion"
 import { Reveal } from "@/components/motion/reveal"
+import { Card } from "@/components/ui/card"
 
 export function SolutionSection() {
   const reduceMotion = useReducedMotion()
@@ -17,13 +19,41 @@ export function SolutionSection() {
       icon: Zap,
       title: "Implementação Personalizada",
       description:
-        "Criamos automações e agentes de IA sob medida que trabalham EM PARCERIA com sua equipe — economizando tempo sem substituir o fator humano.",
+        "Criamos automações e agentes de IA sob medida que trabalham EM PARCERIA com sua equipe, economizando tempo sem substituir o fator humano.",
     },
     {
       icon: Wrench,
       title: "Suporte e Evolução Contínua",
       description:
         "Acompanhamento constante, ajustes e treinamento para garantir que a tecnologia continue gerando valor real.",
+    },
+  ]
+
+  const services = [
+    {
+      icon: Code2,
+      title: "Desenvolvimento de software sob medida",
+      description: "Sistemas web personalizados para o seu processo, não templates genéricos.",
+      href: "/servicos/desenvolvimento-de-software",
+    },
+    {
+      icon: Globe,
+      title: "Sites e landing pages",
+      description: "Presença digital que já nasce pronta para gerar leads e ser encontrada.",
+      href: "/servicos/sites-e-landing-pages",
+    },
+    {
+      icon: Bot,
+      title: "Automação e IA",
+      description:
+        "Eliminação de tarefas repetitivas, conferências, registros e análises que podem ser feitas por inteligência artificial",
+      href: "/servicos/consultoria-automacao",
+    },
+    {
+      icon: BarChart3,
+      title: "Dados e Dashboards",
+      description: "Visão global do seu negócio, o que funciona e onde deve melhorar",
+      href: "/servicos/dados-dashboards",
     },
   ]
 
@@ -69,6 +99,23 @@ export function SolutionSection() {
               )
             })}
           </div>
+        </div>
+
+        <div className="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto mt-16 md:mt-24">
+          {services.map((service, index) => {
+            const Icon = service.icon
+            return (
+              <Reveal key={service.href} index={index} className="h-full">
+                <Link href={service.href} className="block h-full">
+                  <Card className="h-full p-8 bg-background/50 border-primary/20 hover:border-primary/40 transition-all">
+                    <Icon className="h-10 w-10 text-primary mb-4" />
+                    <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                    <p className="text-foreground/70 leading-relaxed">{service.description}</p>
+                  </Card>
+                </Link>
+              </Reveal>
+            )
+          })}
         </div>
       </div>
     </section>
