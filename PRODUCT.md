@@ -35,7 +35,7 @@ Diferencial confirmado pelo usuário: agilidade de entrega, atendimento próximo
 Cases de clientes reais (confirmados pelo usuário, não inventar novos):
 - Gonfer Construir — Leandro Ferreira, Sócio Administrador
 - Loja Megamix — Luciana Gonçalves, Dona
-- Hospital Felicio Roxo — Dr. Lourenço, Médico
+- Hospital Felício Rocho — Dr. Lourenço, Médico
 
 Estatísticas atualmente exibidas no site: 50+ empresas atendidas, 500+ horas economizadas/mês, 95% de taxa de satisfação. Copy/mensagens da home serão revisadas em outro momento — usar o que já está no site como base até então.
 

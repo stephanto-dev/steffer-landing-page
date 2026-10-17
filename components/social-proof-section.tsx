@@ -23,7 +23,7 @@ const testimonials = [
     quote: "Fizeram em dias algo muito melhor o que a equipe de desenvolvimento demorou meses para entregar",
     author: "Dr. Lourenço",
     role: "Médico",
-    company: "Hospital Felicio Roxo",
+    company: "Hospital Felício Rocho",
     rating: 5,
   },
 ]

@@ -51,9 +51,10 @@ export function TekoSection() {
               </h2>
 
               <p className="text-xl text-foreground/70 mb-8 leading-relaxed text-pretty">
-                A plataforma definitiva para o "limbo administrativo" de hospitais de médio porte.
-                Nascido no <strong>Hospital Felício Rocho</strong>, o Teko substitui processos informais
-                por automação digital de alta adesão.
+                A plataforma definitiva para o "limbo administrativo" de hospitais. Nascido no{" "}
+                <strong>Hospital Felício Rocho</strong>, o Teko substitui processos informais por automação digital de
+                alta adesão. Atende de ambulatórios, clínicas e UPAs a hospitais de médio porte e grandes redes
+                hospitalares.
               </p>
             </motion.div>
 
