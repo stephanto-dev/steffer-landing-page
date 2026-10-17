@@ -84,12 +84,12 @@ export function Header() {
               Blog
             </Link>
 
-            <button
-              onClick={() => scrollToSection("produtos")}
+            <Link
+              href="/teko"
               className="text-sm text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
             >
-              Produtos
-            </button>
+              Teko
+            </Link>
 
             <div
               className="relative group"
@@ -122,17 +122,12 @@ export function Header() {
               )}
             </div>
 
-            <button
-              onClick={() => scrollToSection("contato")}
-              className="text-sm text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
-            >
-              Contato
-            </button>
             <Button
-              onClick={() => scrollToSection("contato")}
-              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary font-semibold text-sm px-4 py-2 whitespace-nowrap"
+              asChild
+              variant="outline"
+              className="border-primary/50 text-foreground hover:bg-primary/10 font-semibold text-sm px-4 py-2 whitespace-nowrap"
             >
-              Falar com especialista
+              <Link href="/diagnostico-gratuito">Diagnóstico gratuito</Link>
             </Button>
           </nav>
 
@@ -170,12 +165,13 @@ export function Header() {
               Blog
             </Link>
 
-            <button
-              onClick={() => scrollToSection("produtos")}
-              className="text-foreground/80 hover:text-primary transition-colors text-sm font-medium text-left"
+            <Link
+              href="/teko"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-foreground/80 hover:text-primary transition-colors text-sm font-medium"
             >
-              Produtos
-            </button>
+              Teko
+            </Link>
 
             <div className="flex flex-col gap-2">
               <button
@@ -205,17 +201,14 @@ export function Header() {
               )}
             </div>
 
-            <button
-              onClick={() => scrollToSection("contato")}
-              className="text-foreground/80 hover:text-primary transition-colors text-sm font-medium text-left"
-            >
-              Contato
-            </button>
             <Button
-              onClick={() => scrollToSection("contato")}
-              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary font-semibold text-sm w-full mt-2"
+              asChild
+              variant="outline"
+              className="border-primary/50 text-foreground hover:bg-primary/10 font-semibold text-sm w-full"
             >
-              Falar com especialista
+              <Link href="/diagnostico-gratuito" onClick={() => setMobileMenuOpen(false)}>
+                Diagnóstico gratuito
+              </Link>
             </Button>
           </nav>
         )}

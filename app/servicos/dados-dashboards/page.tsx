@@ -9,7 +9,26 @@ import { DadosUseCases } from "@/components/servicos/dados/use-cases"
 import { DadosBenefits } from "@/components/servicos/dados/benefits"
 import { DadosFAQ } from "@/components/servicos/dados/faq"
 import { DadosCTA } from "@/components/servicos/dados/cta"
+import { RelatedSolutions } from "@/components/related-solutions"
 import { ContactSection } from "@/components/contact-section"
+
+const relatedSolutions = [
+  {
+    title: "Automação para e-commerce",
+    description: "Dashboards de vendas e estoque em tempo real, alertas automáticos e integrações",
+    href: "/solucoes/automacao-com-ia-para-ecommerce",
+  },
+  {
+    title: "Software sob medida para PME",
+    description: "Sistemas personalizados com dashboards integrados ao seu processo",
+    href: "/solucoes/software-sob-medida-para-pme",
+  },
+  {
+    title: "Diagnóstico gratuito",
+    description: "Sessão de 45min para mapear suas fontes de dados e definir KPIs relevantes",
+    href: "/diagnostico-gratuito",
+  },
+]
 
 export const metadata = {
   title: "Dados e Dashboards | Steffer",
@@ -44,6 +63,7 @@ export default function DadosDashboardsPage() {
       <DadosBenefits />
       <DadosFAQ />
       <DadosCTA />
+      <RelatedSolutions solutions={relatedSolutions} />
       <ContactSection />
       <Footer />
     </main>

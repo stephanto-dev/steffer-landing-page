@@ -5,6 +5,7 @@ import { WhatDelivers } from "@/components/solucoes/what-delivers"
 import { HowWorks } from "@/components/solucoes/how-works"
 import { SimpleFAQ } from "@/components/solucoes/simple-faq"
 import { ContactSection } from "@/components/contact-section"
+import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -107,6 +108,16 @@ export default function AutomacaoEcommercePage() {
       <WhatDelivers items={whatDeliversItems} />
       <HowWorks steps={howWorksSteps} />
       <SimpleFAQ faqs={faqs} />
+      <section className="py-12 px-6 text-center">
+        <div className="max-w-4xl mx-auto">
+          <Link
+            href="/diagnostico-gratuito"
+            className="inline-flex items-center gap-2 text-lg font-semibold text-primary hover:underline"
+          >
+            Agendar diagnóstico gratuito →
+          </Link>
+        </div>
+      </section>
       <ContactSection />
       <Footer />
     </main>
