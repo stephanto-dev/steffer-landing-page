@@ -36,6 +36,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://steffer.com.br/sitemap.xml",
+    sitemap: "https://www.steffer.com.br/sitemap.xml",
   }
 }

@@ -15,6 +15,20 @@ export const metadata = {
   title: "Dados e Dashboards | Steffer",
   description:
     "Transforme dados em decisões. Dashboards inteligentes que centralizam informações e mostram o que realmente importa em tempo real.",
+  alternates: { canonical: "https://www.steffer.com.br/servicos/dados-dashboards" },
+  openGraph: {
+    title: "Dados e Dashboards",
+    description:
+      "Transforme dados em decisões. Dashboards inteligentes que centralizam informações e mostram o que realmente importa em tempo real.",
+    url: "https://www.steffer.com.br/servicos/dados-dashboards",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dados e Dashboards",
+    description:
+      "Transforme dados em decisões. Dashboards inteligentes que centralizam informações e mostram o que realmente importa em tempo real.",
+  },
 }
 
 export default function DadosDashboardsPage() {

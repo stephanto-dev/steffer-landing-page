@@ -22,7 +22,7 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            url: "https://steffer.com.br/",
+            url: "https://www.steffer.com.br/",
             name: "Steffer",
             alternateName: "Steffer | Consultoria de IA e Automação",
           }),

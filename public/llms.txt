@@ -1,0 +1,47 @@
+# Steffer
+
+> A Steffer é uma consultoria brasileira de tecnologia sob medida: automação, inteligência artificial, desenvolvimento de software, sites e dados/dashboards que se adaptam ao processo do cliente, e não o contrário. O trabalho começa por um diagnóstico gratuito do processo e segue com implementação personalizada, treinamento e suporte contínuo, com foco em pequenas e médias empresas. A Steffer também desenvolve o Teko, plataforma de gestão de escalas médicas, trocas de plantão via WhatsApp e repasses automáticos, nascida e em operação no Hospital Felício Rocho, em Belo Horizonte (MG).
+
+- Fundada em abril de 2024 por dois sócios formados na USP; time enxuto, sem camada de burocracia entre o cliente e quem constrói a solução.
+- Propósito: simplificar a vida do empreendedor brasileiro por meio da tecnologia.
+- Tese: entender o negócio antes de sugerir qualquer tecnologia, construir uma base simples e robusta e aplicar IA só onde ela realmente economiza tempo. Automações que trabalham em parceria com a equipe (humano + IA), sem substituir as pessoas.
+- Como trabalha: (1) mapeamento e diagnóstico dos processos; (2) implementação personalizada de automações, agentes de IA, sistemas, sites ou dashboards; (3) suporte, treinamento e evolução contínuos.
+- Valores: raça, excelência, agilidade, pessoas, honestidade, simplicidade e paciência.
+- Diagnóstico gratuito, sem compromisso de contratação: análise dos processos com maior potencial de automação, cálculo de ROI, plano de ação priorizado e sessão de 45 minutos com um especialista. Primeira conversa em até 24 horas.
+- Prazo de implementação informado no site: 4 a 8 semanas.
+- Investimento: projetos iniciais custam até R$ 10 mil; o valor exato sai do diagnóstico gratuito.
+- Segmentos atendidos citados no site: saúde/médicos, e-commerce, empresas de serviços, agências e consultorias, vendas/comercial.
+- Clientes citados no site: Hospital Felício Rocho, Gonfer Construir e Loja Megamix.
+- Produto próprio: Teko — escalas médicas (alertas de conflito e trava de qualificação por setor), trocas de plantão via WhatsApp, dupla validação de presença, cálculo automático de repasses e exportação para a folha de pagamento. Atende de ambulatórios, clínicas e UPAs até hospitais de médio porte e grandes redes hospitalares. Segundo a Steffer, o Hospital Felício Rocho atingiu 100% de adesão do corpo clínico e eliminou erros de repasse manual.
+- Contato: contato@steffer.com.br · WhatsApp: https://wa.me/553798652419
+
+## Serviços
+
+- [Automação e IA (Consultoria e Automação)](https://www.steffer.com.br/servicos/consultoria-automacao): eliminação de tarefas repetitivas com automações e agentes de IA: atendimento com chatbots inteligentes, processamento de documentos e dados, integração entre sistemas (CRM, ERP), workflows de aprovação e notificações; metodologia em 6 fases com treinamento e suporte contínuo.
+- [Desenvolvimento de software sob medida](https://www.steffer.com.br/servicos/desenvolvimento-de-software): sistemas web personalizados, painéis e ferramentas internas, integrações (WhatsApp, ERPs, CRMs) e manutenção contínua, para negócios com processos específicos demais para um SaaS genérico.
+- [Sites e landing pages](https://www.steffer.com.br/servicos/sites-e-landing-pages): sites institucionais e landing pages de captação, otimizados para buscadores e IA generativa (SEO e GEO) desde a construção e integrados à captação de leads (formulário → WhatsApp/CRM).
+- [Dados e Dashboards](https://www.steffer.com.br/servicos/dados-dashboards): integração de fontes de dados (CRM, analytics, e-commerce, financeiro, marketing, APIs e planilhas), definição de KPIs, dashboards customizados, alertas e relatórios automáticos.
+
+## Produto: Teko
+
+- [Teko: escala médica inteligente](https://teko.steffer.com.br/): plataforma da Steffer para gestão de escalas médicas, trocas de plantão via WhatsApp, dupla validação de presença, repasses automáticos e auditáveis; caso do Hospital Felício Rocho; agendamento de demonstração.
+
+## Empresa
+
+- [Sobre a Steffer](https://www.steffer.com.br/sobre): origem, tese, propósito e valores da empresa.
+- [Página inicial](https://www.steffer.com.br/): visão geral da abordagem (diagnóstico → implementação personalizada → suporte e evolução), segmentos atendidos, comparativo com outras soluções e como agendar o diagnóstico gratuito.
+
+## Blog
+
+- [Blog da Steffer](https://www.steffer.com.br/blog): publicações sobre dados, automação e IA para empresas.
+- [Pare de Automatizar o Caos: Por que sua empresa precisa de Processos antes de Robôs](https://www.steffer.com.br/blog/pare-de-automatizar-o-caos-por-que-sua-empresa-precisa-de-processos-antes-de-robos): por que mapear processos antes de automatizar; base da abordagem "diagnóstico primeiro" da Steffer.
+- [O que é Inteligência Artificial para Empresas? (E por que ela vai muito além do ChatGPT)](https://www.steffer.com.br/blog/o-que-e-inteligencia-artificial-para-empresas-e-por-que-ela-vai-muito-alem-do-chatgpt): IA no contexto corporativo, diferença entre robôs básicos e agentes de IA e como aplicá-la para reduzir custos e escalar vendas.
+- [Como fazer uma Chatbot para a sua empresa](https://www.steffer.com.br/blog/como-fazer-uma-chatbot-para-a-sua-empresa): passo a passo para criar um chatbot/agente de IA no WhatsApp sem perder o toque humano.
+- [Por que 86% das empresas falham ao usar IA (E como não ser uma delas)](https://www.steffer.com.br/blog/por-que-86-das-empresas-falham-ao-usar-ia-e-como-nao-ser-uma-delas): quatro erros comuns de PMEs ao implementar IA, incluindo o risco de conexões não oficiais do WhatsApp.
+
+## Optional
+
+- [O Fim dos Robôs Burros: Como os Agentes Autônomos estão transformando o atendimento e as vendas](https://www.steffer.com.br/blog/o-fim-dos-robos-burros-como-os-agentes-autonomos-estao-transformando-o-atendimento-e-as-vendas): diferença entre automação tradicional e agentes de IA no atendimento e nas vendas.
+- [O Churn Invisível: Como o caos operacional destrói a sua retenção (e como a IA pode resolver)](https://www.steffer.com.br/blog/o-churn-invisivel-como-o-caos-operacional-destroi-a-sua-retencao-e-como-a-ia-pode-resolver): ineficiência operacional como causa de perda de clientes e o papel da automação na retenção.
+- [O Paradoxo do ROI: Por que as pequenas empresas estão vencendo as corporações bilionárias na corrida da IA](https://www.steffer.com.br/blog/o-paradoxo-do-roi-por-que-as-pequenas-empresas-estao-vencendo-as-corporacoes-bilionarias-na): por que PMEs obtêm retorno mais rápido com IA.
+- [Você não precisa de um programador para automatizar sua empresa. Veja como.](https://www.steffer.com.br/blog/voce-nao-precisa-de-um-programador-para-automatizar-sua-empresa-veja-como): guia prático de automação sem código com ferramentas como Make e Zapier.

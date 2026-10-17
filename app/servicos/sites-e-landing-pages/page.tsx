@@ -5,7 +5,20 @@ export const metadata: Metadata = {
   title: "Sites e Landing Pages | Steffer",
   description:
     "Presença digital que já nasce pronta para gerar leads e ser encontrada. Sites institucionais e landing pages otimizados desde o primeiro dia.",
-  alternates: { canonical: "https://steffer.com.br/servicos/sites-e-landing-pages" },
+  alternates: { canonical: "https://www.steffer.com.br/servicos/sites-e-landing-pages" },
+  openGraph: {
+    title: "Sites e Landing Pages",
+    description:
+      "Presença digital que já nasce pronta para gerar leads e ser encontrada. Sites institucionais e landing pages otimizados desde o primeiro dia.",
+    url: "https://www.steffer.com.br/servicos/sites-e-landing-pages",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sites e Landing Pages",
+    description:
+      "Presença digital que já nasce pronta para gerar leads e ser encontrada. Sites institucionais e landing pages otimizados desde o primeiro dia.",
+  },
 }
 
 export default function SitesELandingPagesPage() {

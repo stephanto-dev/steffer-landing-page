@@ -14,6 +14,20 @@ export const metadata = {
   title: "Agentes de IA | Steffer",
   description:
     "Assistentes virtuais inteligentes que trabalham 24/7. Atendimento, vendas, suporte e processos internos automatizados com IA conversacional.",
+  alternates: { canonical: "https://www.steffer.com.br/servicos/agentes-ia" },
+  openGraph: {
+    title: "Agentes de IA",
+    description:
+      "Assistentes virtuais inteligentes que trabalham 24/7. Atendimento, vendas, suporte e processos internos automatizados com IA conversacional.",
+    url: "https://www.steffer.com.br/servicos/agentes-ia",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Agentes de IA",
+    description:
+      "Assistentes virtuais inteligentes que trabalham 24/7. Atendimento, vendas, suporte e processos internos automatizados com IA conversacional.",
+  },
 }
 
 export default function AgentesIAPage() {

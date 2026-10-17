@@ -8,10 +8,23 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 
 export const metadata: Metadata = {
-  title: "Sobre a Steffer",
+  title: "Sobre a Steffer | Steffer",
   description:
     "Fundada em 2024 por dois sócios da USP, a Steffer simplifica a vida do empreendedor brasileiro através da tecnologia.",
-  alternates: { canonical: "https://steffer.com.br/sobre" },
+  alternates: { canonical: "https://www.steffer.com.br/sobre" },
+  openGraph: {
+    title: "Sobre a Steffer",
+    description:
+      "Fundada em 2024 por dois sócios da USP, a Steffer simplifica a vida do empreendedor brasileiro através da tecnologia.",
+    url: "https://www.steffer.com.br/sobre",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sobre a Steffer",
+    description:
+      "Fundada em 2024 por dois sócios da USP, a Steffer simplifica a vida do empreendedor brasileiro através da tecnologia.",
+  },
 }
 
 const values = [

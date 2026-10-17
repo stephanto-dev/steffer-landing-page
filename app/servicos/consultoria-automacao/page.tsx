@@ -13,6 +13,20 @@ export const metadata = {
   title: "Consultoria e Automação | Steffer",
   description:
     "Transforme processos manuais em fluxos automatizados. Economize tempo, reduza erros e escale seu negócio com automação inteligente.",
+  alternates: { canonical: "https://www.steffer.com.br/servicos/consultoria-automacao" },
+  openGraph: {
+    title: "Consultoria e Automação",
+    description:
+      "Transforme processos manuais em fluxos automatizados. Economize tempo, reduza erros e escale seu negócio com automação inteligente.",
+    url: "https://www.steffer.com.br/servicos/consultoria-automacao",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Consultoria e Automação",
+    description:
+      "Transforme processos manuais em fluxos automatizados. Economize tempo, reduza erros e escale seu negócio com automação inteligente.",
+  },
 }
 
 export default function ConsultoriaAutomacaoPage() {

@@ -12,11 +12,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://www.steffer.com.br";
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: new Date() },
-    { url: `${baseUrl}/servicos`, lastModified: new Date() },
     { url: `${baseUrl}/sobre`, lastModified: new Date() },
+    { url: `${baseUrl}/blog`, lastModified: new Date() },
     { url: `${baseUrl}/servicos/desenvolvimento-de-software`, lastModified: new Date() },
     { url: `${baseUrl}/servicos/sites-e-landing-pages`, lastModified: new Date() },
-    { url: `${baseUrl}/blog`, lastModified: new Date() },
+    { url: `${baseUrl}/servicos/consultoria-automacao`, lastModified: new Date() },
+    { url: `${baseUrl}/servicos/dados-dashboards`, lastModified: new Date() },
   ];
 
   const posts = await client.fetch<PostSlugEntry[]>(postSlugsQuery);

@@ -104,6 +104,12 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
           ]
         : undefined,
     },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description,
+      images: cover ? [cover] : undefined,
+    },
   };
 }
 
