@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Mail, MessageCircle } from "lucide-react";
+import { CONTACT } from "@/lib/constants";
 
 export function Footer() {
   const scrollToSection = (id: string) => {
@@ -130,13 +131,13 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/553798652419"
+                  href={CONTACT.whatsapp.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 sm:gap-3 text-sm sm:text-base text-foreground/70 hover:text-primary transition-colors"
                 >
                   <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
-                  <span>WhatsApp</span>
+                  <span>WhatsApp {CONTACT.whatsapp.display}</span>
                 </a>
               </li>
             </ul>
