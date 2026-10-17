@@ -47,14 +47,19 @@ export function TekoSection() {
           <div className="flex-1 text-left">
             <motion.div ref={headerRef} style={{ y: headerY, opacity: headerOpacity }}>
               <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-balance">
-                Conheça o <span className="text-primary">Teko</span>
+                Conheça o{" "}
+                <Link href="/teko" className="text-primary hover:underline">
+                  Teko
+                </Link>
               </h2>
 
               <p className="text-xl text-foreground/70 mb-8 leading-relaxed text-pretty">
                 A plataforma definitiva para o "limbo administrativo" de hospitais. Nascido no{" "}
-                <strong>Hospital Felício Rocho</strong>, o Teko substitui processos informais por automação digital de
-                alta adesão. Atende de ambulatórios, clínicas e UPAs a hospitais de médio porte e grandes redes
-                hospitalares.
+                <Link href="/cases/hospital-felicio-rocho" className="font-semibold hover:text-primary transition-colors">
+                  Hospital Felício Rocho
+                </Link>
+                , o Teko substitui processos informais por automação digital de alta adesão. Atende de ambulatórios,
+                clínicas e UPAs a hospitais de médio porte e grandes redes hospitalares.
               </p>
             </motion.div>
 
@@ -74,17 +79,21 @@ export function TekoSection() {
 
             <Reveal className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary h-14 px-8 text-base sm:text-lg" asChild>
-                <Link href="https://teko.steffer.com.br" target="_blank">
-                  Ver Plataforma <ArrowRight className="ml-2 h-5 w-5" />
+                <Link href="/teko">
+                  Saber mais sobre o Teko <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="border-primary/20 text-foreground hover:bg-primary/5 hover:text-foreground h-14 px-8 text-base sm:text-lg" asChild>
-                <Link href="#contato">Solicitar Demonstração</Link>
+                <Link href="/diagnostico-gratuito">Agendar demonstração</Link>
               </Button>
             </Reveal>
 
             <p className="mt-6 text-sm text-foreground/50 italic">
-              * Solução validada e em operação no Hospital Felício Rocho.
+              * Solução validada e em operação no{" "}
+              <Link href="/cases/hospital-felicio-rocho" className="hover:text-primary transition-colors">
+                Hospital Felício Rocho
+              </Link>
+              .
             </p>
           </div>
 

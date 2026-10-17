@@ -140,6 +140,16 @@ export default function SoftwareSobMedidaPMEPage() {
       <TekoExample />
       <HowWorks steps={howWorksSteps} />
       <SimpleFAQ faqs={faqs} />
+      <section className="py-12 px-6 text-center">
+        <div className="max-w-4xl mx-auto">
+          <Link
+            href="/diagnostico-gratuito"
+            className="inline-flex items-center gap-2 text-lg font-semibold text-primary hover:underline"
+          >
+            Agendar diagnóstico gratuito →
+          </Link>
+        </div>
+      </section>
       <ContactSection />
       <Footer />
     </main>

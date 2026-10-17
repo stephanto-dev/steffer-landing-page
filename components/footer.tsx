@@ -16,7 +16,7 @@ export function Footer() {
   return (
     <footer className="bg-card border-t border-border py-8 sm:py-12 md:py-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-12">
           {/* Column 1 - Logo & Description */}
           <div>
             <div className="flex items-center gap-2 mb-3 sm:mb-4">
@@ -96,25 +96,80 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("diagnostico")}
+                <Link
+                  href="/teko"
                   className="text-sm sm:text-base text-foreground/70 hover:text-primary transition-colors"
                 >
-                  Diagnóstico Gratuito
-                </button>
+                  Teko
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("contato")}
+                <Link
+                  href="/blog"
                   className="text-sm sm:text-base text-foreground/70 hover:text-primary transition-colors"
                 >
-                  Contato
-                </button>
+                  Blog
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 3 - Contact */}
+          {/* Column 3 - Soluções */}
+          <div>
+            <h3 className="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Soluções</h3>
+            <ul className="space-y-2 sm:space-y-3">
+              <li>
+                <Link
+                  href="/diagnostico-gratuito"
+                  className="text-sm sm:text-base text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Diagnóstico gratuito
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/solucoes/atendimento-whatsapp-com-ia"
+                  className="text-sm sm:text-base text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Atendimento WhatsApp com IA
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/solucoes/automacao-com-ia-para-ecommerce"
+                  className="text-sm sm:text-base text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Automação para e-commerce
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/solucoes/software-sob-medida-para-pme"
+                  className="text-sm sm:text-base text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Software sob medida
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/solucoes/dev-agencia-ou-consultoria"
+                  className="text-sm sm:text-base text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Dev, agência ou consultoria
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/cases/hospital-felicio-rocho"
+                  className="text-sm sm:text-base text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Case Felício Rocho
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 4 - Contact */}
           <div>
             <h3 className="font-semibold text-base sm:text-lg mb-3 sm:mb-4">
               Contato

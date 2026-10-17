@@ -5,6 +5,7 @@ import { SimpleFAQ } from "@/components/solucoes/simple-faq"
 import { ContactSection } from "@/components/contact-section"
 import { Card } from "@/components/ui/card"
 import { Reveal } from "@/components/motion/reveal"
+import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -184,6 +185,16 @@ export default function DevAgenciaOuConsultoriaPage() {
       <ComparisonTable />
       <WhenEachMakesSense />
       <SimpleFAQ faqs={faqs} />
+      <section className="py-12 px-6 text-center">
+        <div className="max-w-4xl mx-auto">
+          <Link
+            href="/diagnostico-gratuito"
+            className="inline-flex items-center gap-2 text-lg font-semibold text-primary hover:underline"
+          >
+            Agendar diagnóstico gratuito →
+          </Link>
+        </div>
+      </section>
       <ContactSection />
       <Footer />
     </main>

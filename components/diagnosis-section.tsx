@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { CheckCircle, Flame, Clock } from "lucide-react"
 import { Reveal } from "@/components/motion/reveal"
+import Link from "next/link"
 
 export function DiagnosisSection() {
   const scrollToSection = (id: string) => {
@@ -96,10 +97,14 @@ export function DiagnosisSection() {
             <Button
               size="lg"
               onClick={() => scrollToSection("contato")}
-              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary font-semibold h-14 px-8 text-base sm:text-lg w-full mb-6 sm:mb-8 active:scale-95 transition-transform"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary font-semibold h-14 px-8 text-base sm:text-lg w-full mb-3 active:scale-95 transition-transform"
             >
-              Agendar consultoria  
+              Agendar consultoria
             </Button>
+
+            <Link href="/diagnostico-gratuito" className="text-sm text-primary hover:underline inline-block mb-6 sm:mb-8">
+              Saber mais sobre o diagnóstico gratuito →
+            </Link>
 
             <div className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-foreground/70">
               <p className="flex items-center justify-center gap-2">

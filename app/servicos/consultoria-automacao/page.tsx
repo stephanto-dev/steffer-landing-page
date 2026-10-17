@@ -7,7 +7,31 @@ import { ConsultoriaUseCases } from "@/components/servicos/consultoria/use-cases
 import { ConsultoriaBenefits } from "@/components/servicos/consultoria/benefits"
 import { ConsultoriaFAQ } from "@/components/servicos/consultoria/faq"
 import { ConsultoriaCTA } from "@/components/servicos/consultoria/cta"
+import { RelatedSolutions } from "@/components/related-solutions"
 import { ContactSection } from "@/components/contact-section"
+
+const relatedSolutions = [
+  {
+    title: "Atendimento no WhatsApp com IA",
+    description: "Agentes de IA que respondem clientes, tiram dúvidas e passam para a equipe o que precisa de gente",
+    href: "/solucoes/atendimento-whatsapp-com-ia",
+  },
+  {
+    title: "Automação para e-commerce",
+    description: "Atendimento automático, estoque sincronizado, alertas e dashboards de vendas em tempo real",
+    href: "/solucoes/automacao-com-ia-para-ecommerce",
+  },
+  {
+    title: "Software sob medida para PME",
+    description: "Quando vale um sistema sob medida, quanto custa e quanto tempo leva",
+    href: "/solucoes/software-sob-medida-para-pme",
+  },
+  {
+    title: "Diagnóstico gratuito",
+    description: "Sessão de 45min para mapear processos, calcular ROI e sair com plano priorizado",
+    href: "/diagnostico-gratuito",
+  },
+]
 
 export const metadata = {
   title: "Consultoria e Automação | Steffer",
@@ -40,6 +64,7 @@ export default function ConsultoriaAutomacaoPage() {
       <ConsultoriaBenefits />
       <ConsultoriaFAQ />
       <ConsultoriaCTA />
+      <RelatedSolutions solutions={relatedSolutions} />
       <ContactSection />
       <Footer />
     </main>
