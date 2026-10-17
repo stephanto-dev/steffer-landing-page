@@ -13,7 +13,7 @@
 - Segmentos atendidos citados no site: saúde/médicos, e-commerce, empresas de serviços, agências e consultorias, vendas/comercial.
 - Clientes citados no site: Hospital Felício Rocho, Gonfer Construir e Loja Megamix.
 - Produto próprio: Teko — escalas médicas (alertas de conflito e trava de qualificação por setor), trocas de plantão via WhatsApp, dupla validação de presença, cálculo automático de repasses e exportação para a folha de pagamento. Atende de ambulatórios, clínicas e UPAs até hospitais de médio porte e grandes redes hospitalares. Segundo a Steffer, o Hospital Felício Rocho atingiu 100% de adesão do corpo clínico e eliminou erros de repasse manual.
-- Contato: contato@steffer.com.br · WhatsApp: https://wa.me/5537986524199 / (37) 98652-4199
+- Contato: contato@steffer.com.br · WhatsApp: https://wa.me/5537998652419 / (37) 99865-2419
 
 ## Serviços
 
@@ -22,14 +22,23 @@
 - [Sites e landing pages](https://www.steffer.com.br/servicos/sites-e-landing-pages): sites institucionais e landing pages de captação, otimizados para buscadores e IA generativa (SEO e GEO) desde a construção e integrados à captação de leads (formulário → WhatsApp/CRM).
 - [Dados e Dashboards](https://www.steffer.com.br/servicos/dados-dashboards): integração de fontes de dados (CRM, analytics, e-commerce, financeiro, marketing, APIs e planilhas), definição de KPIs, dashboards customizados, alertas e relatórios automáticos.
 
+## Soluções por problema
+
+- [Atendimento no WhatsApp com IA](https://www.steffer.com.br/solucoes/atendimento-whatsapp-com-ia): agentes de IA que respondem clientes, tiram dúvidas, rastreiam pedidos e passam para a equipe o que precisa de gente.
+- [Automação com IA para e-commerce](https://www.steffer.com.br/solucoes/automacao-com-ia-para-ecommerce): atendimento automático no WhatsApp, estoque sincronizado entre loja e ERP, alertas e dashboards de vendas.
+- [Software sob medida para PME](https://www.steffer.com.br/solucoes/software-sob-medida-para-pme): quando vale um sistema sob medida em vez de um SaaS pronto, quanto custa e quanto tempo leva.
+- [Dev, agência ou consultoria](https://www.steffer.com.br/solucoes/dev-agencia-ou-consultoria): comparação de prazo, custo e suporte entre contratar desenvolvedor, agência, fazer sozinho ou contratar consultoria.
+
 ## Produto: Teko
 
-- [Teko: escala médica inteligente](https://teko.steffer.com.br/): plataforma da Steffer para gestão de escalas médicas, trocas de plantão via WhatsApp, dupla validação de presença, repasses automáticos e auditáveis; caso do Hospital Felício Rocho; agendamento de demonstração.
+- [Teko: escala médica, troca de plantão e repasse](https://www.steffer.com.br/teko): software de gestão de escalas médicas para hospitais, substituindo planilhas e WhatsApp por escala única em tempo real, com trocas via WhatsApp e repasse automático.
+- [Caso Hospital Felício Rocho](https://www.steffer.com.br/cases/hospital-felicio-rocho): 100% de adesão do corpo clínico e fim dos erros de repasse manual no Hospital Felício Rocho com o Teko.
 
 ## Empresa
 
 - [Sobre a Steffer](https://www.steffer.com.br/sobre): origem, tese, propósito e valores da empresa.
 - [Página inicial](https://www.steffer.com.br/): visão geral da abordagem (diagnóstico → implementação personalizada → suporte e evolução), segmentos atendidos, comparativo com outras soluções e como agendar o diagnóstico gratuito.
+- [Diagnóstico gratuito](https://www.steffer.com.br/diagnostico-gratuito): sessão de 45 minutos para mapear processos, calcular ROI da automação e sair com plano priorizado, gratuito e sem compromisso.
 
 ## Blog
 

@@ -18,6 +18,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/servicos/sites-e-landing-pages`, lastModified: new Date() },
     { url: `${baseUrl}/servicos/consultoria-automacao`, lastModified: new Date() },
     { url: `${baseUrl}/servicos/dados-dashboards`, lastModified: new Date() },
+    { url: `${baseUrl}/teko`, lastModified: new Date() },
+    { url: `${baseUrl}/cases/hospital-felicio-rocho`, lastModified: new Date() },
+    { url: `${baseUrl}/diagnostico-gratuito`, lastModified: new Date() },
+    { url: `${baseUrl}/solucoes/atendimento-whatsapp-com-ia`, lastModified: new Date() },
+    { url: `${baseUrl}/solucoes/automacao-com-ia-para-ecommerce`, lastModified: new Date() },
+    { url: `${baseUrl}/solucoes/software-sob-medida-para-pme`, lastModified: new Date() },
+    { url: `${baseUrl}/solucoes/dev-agencia-ou-consultoria`, lastModified: new Date() },
   ];
 
   const posts = await client.fetch<PostSlugEntry[]>(postSlugsQuery);
