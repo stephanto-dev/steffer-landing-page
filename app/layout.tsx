@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { CONTACT } from "@/lib/constants"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -123,8 +124,8 @@ export default function RootLayout({
                 "@type": "ContactPoint",
                 contactType: "Sales",
                 availableLanguage: ["Portuguese"],
-                telephone: "+553798652419",
-                email: "contato@steffer.com.br",
+                telephone: CONTACT.whatsapp.number,
+                email: CONTACT.email,
               },
               address: {
                 "@type": "PostalAddress",
