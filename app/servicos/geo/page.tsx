@@ -15,6 +15,20 @@ export const metadata = {
   title: "GEO - Otimização para LLMs | Steffer",
   description:
     "Seja encontrado por ChatGPT, Claude, Perplexity e outros LLMs. Otimize seu conteúdo para a era da busca por IA.",
+  alternates: { canonical: "https://www.steffer.com.br/servicos/geo" },
+  openGraph: {
+    title: "GEO - Otimização para LLMs",
+    description:
+      "Seja encontrado por ChatGPT, Claude, Perplexity e outros LLMs. Otimize seu conteúdo para a era da busca por IA.",
+    url: "https://www.steffer.com.br/servicos/geo",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GEO - Otimização para LLMs",
+    description:
+      "Seja encontrado por ChatGPT, Claude, Perplexity e outros LLMs. Otimize seu conteúdo para a era da busca por IA.",
+  },
 }
 
 export default function GEOPage() {

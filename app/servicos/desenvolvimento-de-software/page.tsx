@@ -7,7 +7,20 @@ export const metadata: Metadata = {
   title: "Desenvolvimento de Software Sob Medida | Steffer",
   description:
     "Sistemas web personalizados para o seu processo, feitos do zero, sem templates genéricos que forçam você a se adaptar à ferramenta.",
-  alternates: { canonical: "https://steffer.com.br/servicos/desenvolvimento-de-software" },
+  alternates: { canonical: "https://www.steffer.com.br/servicos/desenvolvimento-de-software" },
+  openGraph: {
+    title: "Desenvolvimento de Software Sob Medida",
+    description:
+      "Sistemas web personalizados para o seu processo, feitos do zero, sem templates genéricos que forçam você a se adaptar à ferramenta.",
+    url: "https://www.steffer.com.br/servicos/desenvolvimento-de-software",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Desenvolvimento de Software Sob Medida",
+    description:
+      "Sistemas web personalizados para o seu processo, feitos do zero, sem templates genéricos que forçam você a se adaptar à ferramenta.",
+  },
 }
 
 export default function DesenvolvimentoDeSoftwarePage() {

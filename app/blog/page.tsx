@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { format } from "date-fns";
+import type { Metadata } from "next";
 
 import { draftMode } from "next/headers";
 
@@ -19,6 +20,26 @@ type PostCard = {
     asset?: { _ref: string };
   };
   publishedAt?: string;
+};
+
+export const metadata: Metadata = {
+  title: "Blog | Steffer",
+  description:
+    "Insights sobre dados, automação e IA para empresas. Publicações sobre estratégia, tecnologia e casos reais para acelerar crescimento.",
+  alternates: { canonical: "https://www.steffer.com.br/blog" },
+  openGraph: {
+    title: "Blog | Steffer",
+    description:
+      "Insights sobre dados, automação e IA para empresas. Publicações sobre estratégia, tecnologia e casos reais para acelerar crescimento.",
+    url: "https://www.steffer.com.br/blog",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog | Steffer",
+    description:
+      "Insights sobre dados, automação e IA para empresas. Publicações sobre estratégia, tecnologia e casos reais para acelerar crescimento.",
+  },
 };
 
 export default async function BlogPage() {
