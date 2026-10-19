@@ -189,7 +189,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         ) : null}
 
         {post.body ? (
-          <div className="prose prose-invert prose-sm max-w-none sm:prose-base lg:prose-lg">
+          <div className="prose prose-slate prose-sm max-w-none sm:prose-base lg:prose-lg prose-headings:text-foreground prose-h1:text-foreground prose-h2:text-foreground prose-h3:text-foreground prose-h4:text-foreground prose-h5:text-foreground prose-h6:text-foreground prose-p:text-foreground prose-a:text-secondary prose-a:underline prose-a:decoration-secondary/30 hover:prose-a:decoration-secondary prose-strong:text-foreground prose-strong:font-semibold prose-ul:text-foreground prose-ol:text-foreground prose-li:text-foreground prose-blockquote:text-foreground prose-blockquote:border-l-secondary prose-code:text-foreground prose-pre:bg-muted prose-pre:text-foreground prose-td:text-foreground prose-th:text-foreground prose-figcaption:text-muted-foreground">
             <PortableText
               value={post.body}
               components={portableTextComponents}
