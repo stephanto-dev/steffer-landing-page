@@ -35,7 +35,7 @@ export default function Home() {
             "@type": "WebSite",
             url: "https://www.steffer.com.br/",
             name: "Steffer",
-            alternateName: "Steffer | Consultoria de IA e Automação",
+            alternateName: ["Steffer | Consultoria de IA e Automação", "Stefer"],
           }),
         }}
       />
@@ -46,6 +46,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
             name: "Steffer",
+            alternateName: "Stefer",
             description:
               "Consultoria de IA e Automação especializada em transformar processos manuais em produtividade escalável para pequenos empreendedores",
             url: "https://www.steffer.com.br",
