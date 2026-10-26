@@ -27,11 +27,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/solucoes/dev-agencia-ou-consultoria`, lastModified: new Date() },
   ];
 
-  const posts = await client.fetch<PostSlugEntry[]>(postSlugsQuery);
-  const postRoutes = posts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: post._updatedAt ? new Date(post._updatedAt) : new Date(),
-  }));
+  try {
+    const posts = await client.fetch<PostSlugEntry[]>(postSlugsQuery);
+    const postRoutes = posts.map((post) => ({
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: post._updatedAt ? new Date(post._updatedAt) : new Date(),
+    }));
 
-  return [...staticRoutes, ...postRoutes];
+    return [...staticRoutes, ...postRoutes];
+  } catch (error) {
+    console.error("Error fetching blog posts for sitemap:", error);
+    return staticRoutes;
+  }
 }
