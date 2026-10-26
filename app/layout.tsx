@@ -9,9 +9,6 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.steffer.com.br/"),
-  alternates: {
-    canonical: "https://www.steffer.com.br/",
-  },
   title: "Steffer | Tecnologia sob medida para o seu negócio",
   description:
       "Consultoria e desenvolvimento de tecnologia sob medida. Automação, IA, sistemas e dados que se adaptam ao seu processo, não o contrário.",
@@ -108,56 +105,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "ProfessionalService",
-              name: "Steffer",
-              description:
-                "Consultoria de IA e Automação especializada em transformar processos manuais em produtividade escalável para pequenos empreendedores",
-              url: "https://www.steffer.com.br",
-              logo: "https://www.steffer.com.br/images/logo-20steffer.png",
-              image: "https://www.steffer.com.br/og-image.png",
-              contactPoint: {
-                "@type": "ContactPoint",
-                contactType: "Sales",
-                availableLanguage: ["Portuguese"],
-                telephone: CONTACT.whatsapp.number,
-                email: CONTACT.email,
-              },
-              address: {
-                "@type": "PostalAddress",
-                addressCountry: "BR",
-              },
-              areaServed: {
-                "@type": "Country",
-                name: "Brasil",
-              },
-              serviceType: [
-                "Consultoria de IA",
-                "Automação de Processos",
-                "Agentes de IA",
-                "Orquestração de Processos",
-                "GEO (Generative Engine Optimization)",
-                "Dashboards e Análise de Dados",
-              ],
-              priceRange: "Até R$ 10.000",
-              knowsAbout: [
-                "Inteligência Artificial",
-                "Automação RPA",
-                "n8n",
-                "Make.com",
-                "ChatGPT",
-                "APIs",
-                "Integração de Sistemas",
-              ],
-              sameAs: [],
-            }),
-          }}
-        />
-
         <meta
           name="description"
           content="Consultoria de IA e Automação especializada em transformar processos manuais em produtividade escalável"

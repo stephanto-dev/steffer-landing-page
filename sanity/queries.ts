@@ -18,7 +18,8 @@ export const postBySlugQuery = `*[_type == "post" && slug.current == $slug][0]{
   body
 }`;
 
-export const postSlugsQuery = `*[_type == "post" && defined(slug.current)]{
+export const postSlugsQuery = `*[_type == "post" && defined(slug.current) && defined(publishedAt)] | order(publishedAt desc){
   "slug": slug.current,
-  _updatedAt
+  _updatedAt,
+  publishedAt
 }`;
