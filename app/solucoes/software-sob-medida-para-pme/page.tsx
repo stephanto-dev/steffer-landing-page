@@ -141,7 +141,15 @@ export default function SoftwareSobMedidaPMEPage() {
       <HowWorks steps={howWorksSteps} />
       <SimpleFAQ faqs={faqs} />
       <section className="py-12 px-6 text-center">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto space-y-4">
+          <p className="text-foreground/80">
+            <Link
+              href="/blog/vibe-coding-na-sua-empresa"
+              className="text-primary hover:underline font-semibold"
+            >
+              Leia sobre quando vale resolver sozinho e quando contratar consultoria →
+            </Link>
+          </p>
           <Link
             href="/diagnostico-gratuito"
             className="inline-flex items-center gap-2 text-lg font-semibold text-primary hover:underline"
