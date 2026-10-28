@@ -9,6 +9,7 @@ import { ConsultoriaFAQ } from "@/components/servicos/consultoria/faq"
 import { ConsultoriaCTA } from "@/components/servicos/consultoria/cta"
 import { RelatedSolutions } from "@/components/related-solutions"
 import { ContactSection } from "@/components/contact-section"
+import Link from "next/link"
 
 const relatedSolutions = [
   {
@@ -64,6 +65,19 @@ export default function ConsultoriaAutomacaoPage() {
       <ConsultoriaBenefits />
       <ConsultoriaFAQ />
       <ConsultoriaCTA />
+      <section className="py-12 px-6 text-center bg-card/20">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-foreground/80">
+            <strong>Leia também:</strong>{" "}
+            <Link
+              href="/blog/vibe-coding-na-sua-empresa"
+              className="text-primary hover:underline font-semibold"
+            >
+              Vibe coding na sua empresa: quando vale fazer sozinho e quando contratar consultoria
+            </Link>
+          </p>
+        </div>
+      </section>
       <RelatedSolutions solutions={relatedSolutions} />
       <ContactSection />
       <Footer />

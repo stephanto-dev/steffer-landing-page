@@ -122,7 +122,11 @@ function WhenEachMakesSense() {
               </li>
               <li>
                 <strong>Fazer sozinho</strong> funciona para automações simples, se alguém da equipe tem tempo para
-                aprender e manter.
+                aprender e manter.{" "}
+                <Link href="/blog/vibe-coding-na-sua-empresa" className="text-primary hover:underline">
+                  Leia sobre vibe coding e quando vale fazer por conta própria
+                </Link>
+                .
               </li>
               <li>
                 <strong>Uma agência</strong> costuma servir bem a projetos grandes com escopo fechado.
