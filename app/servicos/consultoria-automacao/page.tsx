@@ -9,6 +9,7 @@ import { ConsultoriaFAQ } from "@/components/servicos/consultoria/faq"
 import { ConsultoriaCTA } from "@/components/servicos/consultoria/cta"
 import { RelatedSolutions } from "@/components/related-solutions"
 import { ContactSection } from "@/components/contact-section"
+import Link from "next/link"
 
 const relatedSolutions = [
   {
