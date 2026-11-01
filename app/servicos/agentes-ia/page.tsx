@@ -9,6 +9,7 @@ import { AgentesBenefits } from "@/components/servicos/agentes/benefits"
 import { AgentesFAQ } from "@/components/servicos/agentes/faq"
 import { AgentesCTA } from "@/components/servicos/agentes/cta"
 import { ContactSection } from "@/components/contact-section"
+import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 export const metadata = {
   title: "Agentes de IA | Steffer",
@@ -21,12 +22,14 @@ export const metadata = {
       "Assistentes virtuais inteligentes que trabalham 24/7. Atendimento, vendas, suporte e processos internos automatizados com IA conversacional.",
     url: "https://www.steffer.com.br/servicos/agentes-ia",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Agentes de IA",
     description:
       "Assistentes virtuais inteligentes que trabalham 24/7. Atendimento, vendas, suporte e processos internos automatizados com IA conversacional.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 }
 

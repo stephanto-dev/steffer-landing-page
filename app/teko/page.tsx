@@ -7,6 +7,7 @@ import { TekoCase } from "@/components/teko/case"
 import { TekoFAQ } from "@/components/teko/faq"
 import { ContactSection } from "@/components/contact-section"
 import type { Metadata } from "next"
+import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "Teko | Software de escala médica, troca de plantão pelo WhatsApp e repasse automático",
@@ -19,12 +20,14 @@ export const metadata: Metadata = {
       "O Teko organiza escalas médicas, trocas de plantão pelo WhatsApp e o cálculo de repasses para hospitais. Nasceu e opera no Hospital Felício Rocho, em Belo Horizonte.",
     url: "https://www.steffer.com.br/teko",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Teko | Software de escala médica, troca de plantão pelo WhatsApp e repasse automático",
     description:
       "O Teko organiza escalas médicas, trocas de plantão pelo WhatsApp e o cálculo de repasses para hospitais. Nasceu e opera no Hospital Felício Rocho, em Belo Horizonte.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 }
 

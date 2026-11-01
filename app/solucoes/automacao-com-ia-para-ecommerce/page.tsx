@@ -7,6 +7,7 @@ import { SimpleFAQ } from "@/components/solucoes/simple-faq"
 import { ContactSection } from "@/components/contact-section"
 import Link from "next/link"
 import type { Metadata } from "next"
+import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "Automação com IA para e-commerce | Steffer",
@@ -19,12 +20,14 @@ export const metadata: Metadata = {
       "Atendimento automático no WhatsApp, estoque sincronizado entre loja e ERP, alertas e dashboards de vendas. A Steffer automatiza a operação de lojas virtuais em 4 a 8 semanas, com projetos de até R$ 10 mil.",
     url: "https://www.steffer.com.br/solucoes/automacao-com-ia-para-ecommerce",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Automação com IA para e-commerce | Steffer",
     description:
       "Atendimento automático no WhatsApp, estoque sincronizado entre loja e ERP, alertas e dashboards de vendas. A Steffer automatiza a operação de lojas virtuais em 4 a 8 semanas, com projetos de até R$ 10 mil.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 }
 

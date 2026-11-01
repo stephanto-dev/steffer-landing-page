@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card"
 import { Reveal } from "@/components/motion/reveal"
 import Link from "next/link"
 import type { Metadata } from "next"
+import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "Contratar dev, agência ou consultoria para automatizar sua empresa? | Steffer",
@@ -19,12 +20,14 @@ export const metadata: Metadata = {
       "Comparação de prazo, custo inicial e suporte entre contratar um desenvolvedor, uma agência, fazer sozinho ou contratar uma consultoria como a Steffer.",
     url: "https://www.steffer.com.br/solucoes/dev-agencia-ou-consultoria",
     type: "article",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contratar dev, agência ou consultoria para automatizar sua empresa? | Steffer",
     description:
       "Comparação de prazo, custo inicial e suporte entre contratar um desenvolvedor, uma agência, fazer sozinho ou contratar uma consultoria como a Steffer.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 }
 

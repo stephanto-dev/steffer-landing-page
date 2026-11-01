@@ -6,3 +6,11 @@ export const CONTACT = {
     link: "https://wa.me/5537998652419",
   },
 } as const;
+
+export const DEFAULT_OG_IMAGE = {
+  url: "https://www.steffer.com.br/opengraph-image",
+  width: 1200,
+  height: 630,
+  alt: "Steffer - Tecnologia sob medida para o seu negócio",
+  type: "image/png" as const,
+};

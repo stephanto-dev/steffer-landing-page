@@ -10,6 +10,7 @@ import { Header } from "@/components/header";
 import { getClient } from "@/sanity/client";
 import { urlFor } from "@/sanity/image";
 import { postsQuery } from "@/sanity/queries";
+import { DEFAULT_OG_IMAGE } from "@/lib/constants";
 
 type PostCard = {
   _id: string;
@@ -33,12 +34,14 @@ export const metadata: Metadata = {
       "Insights sobre dados, automação e IA para empresas. Publicações sobre estratégia, tecnologia e casos reais para acelerar crescimento.",
     url: "https://www.steffer.com.br/blog",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Blog | Steffer",
     description:
       "Insights sobre dados, automação e IA para empresas. Publicações sobre estratégia, tecnologia e casos reais para acelerar crescimento.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 };
 

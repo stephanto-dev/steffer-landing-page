@@ -11,6 +11,7 @@ import { DadosFAQ } from "@/components/servicos/dados/faq"
 import { DadosCTA } from "@/components/servicos/dados/cta"
 import { RelatedSolutions } from "@/components/related-solutions"
 import { ContactSection } from "@/components/contact-section"
+import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 const relatedSolutions = [
   {
@@ -41,12 +42,14 @@ export const metadata = {
       "Transforme dados em decisões. Dashboards inteligentes que centralizam informações e mostram o que realmente importa em tempo real.",
     url: "https://www.steffer.com.br/servicos/dados-dashboards",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Dados e Dashboards",
     description:
       "Transforme dados em decisões. Dashboards inteligentes que centralizam informações e mostram o que realmente importa em tempo real.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 }
 

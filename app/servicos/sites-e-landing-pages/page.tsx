@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { ServicePage } from "@/components/servicos/service-page"
+import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "Sites e Landing Pages | Steffer",
@@ -12,12 +13,14 @@ export const metadata: Metadata = {
       "Presença digital que já nasce pronta para gerar leads e ser encontrada. Sites institucionais e landing pages otimizados desde o primeiro dia.",
     url: "https://www.steffer.com.br/servicos/sites-e-landing-pages",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sites e Landing Pages",
     description:
       "Presença digital que já nasce pronta para gerar leads e ser encontrada. Sites institucionais e landing pages otimizados desde o primeiro dia.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 }
 

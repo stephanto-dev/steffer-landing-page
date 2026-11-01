@@ -10,6 +10,7 @@ import { ConsultoriaCTA } from "@/components/servicos/consultoria/cta"
 import { RelatedSolutions } from "@/components/related-solutions"
 import { ContactSection } from "@/components/contact-section"
 import Link from "next/link"
+import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 const relatedSolutions = [
   {
@@ -45,12 +46,14 @@ export const metadata = {
       "Transforme processos manuais em fluxos automatizados. Economize tempo, reduza erros e escale seu negócio com automação inteligente.",
     url: "https://www.steffer.com.br/servicos/consultoria-automacao",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Consultoria e Automação",
     description:
       "Transforme processos manuais em fluxos automatizados. Economize tempo, reduza erros e escale seu negócio com automação inteligente.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 }
 

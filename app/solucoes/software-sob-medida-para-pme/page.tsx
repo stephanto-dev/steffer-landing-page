@@ -10,6 +10,7 @@ import Link from "next/link"
 import { Card } from "@/components/ui/card"
 import { Reveal } from "@/components/motion/reveal"
 import type { Metadata } from "next"
+import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "Software sob medida para pequenas e médias empresas: quanto custa e quanto tempo leva | Steffer",
@@ -22,12 +23,14 @@ export const metadata: Metadata = {
       "Quando vale um sistema sob medida em vez de um SaaS pronto, quanto custa e quanto tempo leva. Na Steffer, projetos iniciais de até R$ 10 mil, entregues em 4 a 8 semanas.",
     url: "https://www.steffer.com.br/solucoes/software-sob-medida-para-pme",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Software sob medida para pequenas e médias empresas: quanto custa e quanto tempo leva | Steffer",
     description:
       "Quando vale um sistema sob medida em vez de um SaaS pronto, quanto custa e quanto tempo leva. Na Steffer, projetos iniciais de até R$ 10 mil, entregues em 4 a 8 semanas.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 }
 

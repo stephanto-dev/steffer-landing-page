@@ -8,6 +8,7 @@ import { CaseWhy } from "@/components/cases/hospital-felicio-rocho/why"
 import { CaseCTA } from "@/components/cases/hospital-felicio-rocho/cta"
 import { ContactSection } from "@/components/contact-section"
 import type { Metadata } from "next"
+import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "Caso Hospital Felício Rocho | Escala médica e repasse automáticos com o Teko",
@@ -20,12 +21,14 @@ export const metadata: Metadata = {
       "Como o Hospital Felício Rocho, em Belo Horizonte, trocou planilhas e cálculo manual de repasse pelo Teko e chegou a 100% de adesão do corpo clínico, sem erros de repasse manual.",
     url: "https://www.steffer.com.br/cases/hospital-felicio-rocho",
     type: "article",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Caso Hospital Felício Rocho | Escala médica e repasse automáticos com o Teko",
     description:
       "Como o Hospital Felício Rocho, em Belo Horizonte, trocou planilhas e cálculo manual de repasse pelo Teko e chegou a 100% de adesão do corpo clínico, sem erros de repasse manual.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 }
 

@@ -6,6 +6,7 @@ import { ContactSection } from "@/components/contact-section"
 import { Reveal } from "@/components/motion/reveal"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
+import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "Sobre a Steffer | Steffer",
@@ -18,12 +19,14 @@ export const metadata: Metadata = {
       "Fundada em 2024 por dois sócios da USP, a Steffer simplifica a vida do empreendedor brasileiro através da tecnologia.",
     url: "https://www.steffer.com.br/sobre",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sobre a Steffer",
     description:
       "Fundada em 2024 por dois sócios da USP, a Steffer simplifica a vida do empreendedor brasileiro através da tecnologia.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 }
 

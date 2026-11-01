@@ -80,7 +80,8 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
   const cover = post.coverImage
     ? urlFor(post.coverImage).width(1200).height(630).url()
     : undefined;
-  const description = post.excerpt || undefined;
+  const description = post.excerpt || 
+    "Insights sobre dados, automação e IA para empresas. Publicações sobre estratégia, tecnologia e casos reais para acelerar crescimento.";
 
   return {
     title: `${post.title} | Steffer`,

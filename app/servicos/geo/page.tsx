@@ -10,6 +10,7 @@ import { GeoBenefits } from "@/components/servicos/geo/benefits"
 import { GeoFAQ } from "@/components/servicos/geo/faq"
 import { GeoCTA } from "@/components/servicos/geo/cta"
 import { ContactSection } from "@/components/contact-section"
+import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 export const metadata = {
   title: "GEO - Otimização para LLMs | Steffer",
@@ -22,12 +23,14 @@ export const metadata = {
       "Seja encontrado por ChatGPT, Claude, Perplexity e outros LLMs. Otimize seu conteúdo para a era da busca por IA.",
     url: "https://www.steffer.com.br/servicos/geo",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "GEO - Otimização para LLMs",
     description:
       "Seja encontrado por ChatGPT, Claude, Perplexity e outros LLMs. Otimize seu conteúdo para a era da busca por IA.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 }
 

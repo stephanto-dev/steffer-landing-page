@@ -8,6 +8,7 @@ import { SimpleFAQ } from "@/components/solucoes/simple-faq"
 import { ContactSection } from "@/components/contact-section"
 import Link from "next/link"
 import type { Metadata } from "next"
+import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "Atendimento no WhatsApp com IA para empresas | Steffer",
@@ -20,12 +21,14 @@ export const metadata: Metadata = {
       "A Steffer implementa agentes de IA no WhatsApp que respondem clientes, tiram dúvidas, rastreiam pedidos e passam para a equipe o que precisa de gente. Projetos de até R$ 10 mil, em 4 a 8 semanas.",
     url: "https://www.steffer.com.br/solucoes/atendimento-whatsapp-com-ia",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Atendimento no WhatsApp com IA para empresas | Steffer",
     description:
       "A Steffer implementa agentes de IA no WhatsApp que respondem clientes, tiram dúvidas, rastreiam pedidos e passam para a equipe o que precisa de gente. Projetos de até R$ 10 mil, em 4 a 8 semanas.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 }
 

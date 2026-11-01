@@ -7,6 +7,7 @@ import { DiagnosticoWhy } from "@/components/diagnostico/why"
 import { DiagnosticoFAQ } from "@/components/diagnostico/faq"
 import { ContactSection } from "@/components/contact-section"
 import type { Metadata } from "next"
+import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "Diagnóstico gratuito de automação com IA | Steffer",
@@ -19,12 +20,14 @@ export const metadata: Metadata = {
       "Sessão de 45 minutos com um especialista da Steffer para mapear seus processos, calcular o ROI da automação e sair com um plano priorizado. Gratuito e sem compromisso.",
     url: "https://www.steffer.com.br/diagnostico-gratuito",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Diagnóstico gratuito de automação com IA | Steffer",
     description:
       "Sessão de 45 minutos com um especialista da Steffer para mapear seus processos, calcular o ROI da automação e sair com um plano priorizado. Gratuito e sem compromisso.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 }
 

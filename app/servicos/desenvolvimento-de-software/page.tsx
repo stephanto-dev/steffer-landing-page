@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { ServicePage } from "@/components/servicos/service-page"
 import { ComparisonSection } from "@/components/comparison-section"
 import { TekoSection } from "@/components/teko-section"
+import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "Desenvolvimento de Software Sob Medida | Steffer",
@@ -14,12 +15,14 @@ export const metadata: Metadata = {
       "Sistemas web personalizados para o seu processo, feitos do zero, sem templates genéricos que forçam você a se adaptar à ferramenta.",
     url: "https://www.steffer.com.br/servicos/desenvolvimento-de-software",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
     title: "Desenvolvimento de Software Sob Medida",
     description:
       "Sistemas web personalizados para o seu processo, feitos do zero, sem templates genéricos que forçam você a se adaptar à ferramenta.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
 }
 

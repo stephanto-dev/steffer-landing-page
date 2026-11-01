@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "Steffer",
     images: [
       {
-        url: "https://www.steffer.com.br/og-image.png",
+        url: "https://www.steffer.com.br/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Steffer - Consultoria de IA e Automação",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Steffer | Tecnologia sob medida para o seu negócio",
     description:
       "Consultoria e desenvolvimento de tecnologia sob medida. Automação, IA, sistemas e dados que se adaptam ao seu processo, não o contrário.",
-    images: ["https://www.steffer.com.br/og-image.png"],
+    images: ["https://www.steffer.com.br/opengraph-image"],
   },
   robots: {
     index: true,
@@ -104,15 +104,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <head>
-        <meta
-          name="description"
-          content="Consultoria de IA e Automação especializada em transformar processos manuais em produtividade escalável"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="pt_BR" />
-        <meta name="language" content="Portuguese" />
-      </head>
       <body className={`${inter.className} font-sans antialiased`}>
         {children}
         <Analytics />

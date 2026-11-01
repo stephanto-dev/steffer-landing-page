@@ -51,7 +51,7 @@ export default function Home() {
               "Consultoria de IA e Automação especializada em transformar processos manuais em produtividade escalável para pequenos empreendedores",
             url: "https://www.steffer.com.br",
             logo: "https://www.steffer.com.br/images/logo-20steffer.png",
-            image: "https://www.steffer.com.br/og-image.png",
+            image: "https://www.steffer.com.br/opengraph-image",
             contactPoint: {
               "@type": "ContactPoint",
               contactType: "Sales",
