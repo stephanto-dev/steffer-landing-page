@@ -27,6 +27,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/solucoes/automacao-com-ia-para-ecommerce`, lastModified: new Date() },
     { url: `${baseUrl}/solucoes/software-sob-medida-para-pme`, lastModified: new Date() },
     { url: `${baseUrl}/solucoes/dev-agencia-ou-consultoria`, lastModified: new Date() },
+    { url: `${baseUrl}/politica-de-privacidade`, lastModified: new Date() },
   ];
 
   try {

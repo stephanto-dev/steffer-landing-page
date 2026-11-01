@@ -200,10 +200,18 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="pt-6 sm:pt-8 border-t border-border text-center text-foreground/60 text-xs sm:text-sm">
+        <div className="pt-6 sm:pt-8 border-t border-border text-center text-foreground/60 text-xs sm:text-sm space-y-2">
           <p>
             © {new Date().getFullYear()} Steffer. Parceiros em automação e IA
             que geram resultados reais.
+          </p>
+          <p>
+            <Link 
+              href="/politica-de-privacidade"
+              className="hover:text-primary transition-colors underline"
+            >
+              Política de Privacidade
+            </Link>
           </p>
         </div>
       </div>
