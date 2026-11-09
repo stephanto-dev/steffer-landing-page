@@ -30,7 +30,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
 
   try {
-    const posts = await client.fetch<PostSlugEntry[]>(postSlugsQuery);
+    const posts = await client.fetch<PostSlugEntry[]>(
+      postSlugsQuery,
+      {},
+      {
+        next: { revalidate: 3600, tags: ["sitemap"] },
+      },
+    );
     const postRoutes = posts.map((post) => ({
       url: `${baseUrl}/blog/${post.slug}`,
       lastModified: post._updatedAt ? new Date(post._updatedAt) : new Date(),

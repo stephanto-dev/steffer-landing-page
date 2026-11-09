@@ -28,7 +28,9 @@ export async function POST(request: Request) {
     typeof body.slug === "string" ? body.slug : body.slug?.current || null;
 
   revalidateTag("blog", "default");
+  revalidateTag("sitemap", "default");
   revalidatePath("/blog");
+  revalidatePath("/sitemap.xml");
 
   if (slug) {
     revalidateTag(`post:${slug}`, "default");
