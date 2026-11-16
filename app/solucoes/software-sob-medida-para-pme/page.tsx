@@ -13,12 +13,12 @@ import type { Metadata } from "next"
 import { DEFAULT_OG_IMAGE } from "@/lib/constants"
 
 export const metadata: Metadata = {
-  title: "Software sob medida para pequenas e médias empresas: quanto custa e quanto tempo leva | Steffer",
+  title: "Software sob medida para empresas: custo e prazo | Steffer",
   description:
     "Quando vale um sistema sob medida em vez de um SaaS pronto, quanto custa e quanto tempo leva. Na Steffer, projetos iniciais de até R$ 10 mil, entregues em 4 a 8 semanas.",
   alternates: { canonical: "https://www.steffer.com.br/solucoes/software-sob-medida-para-pme" },
   openGraph: {
-    title: "Software sob medida para pequenas e médias empresas: quanto custa e quanto tempo leva | Steffer",
+    title: "Software sob medida para empresas: custo e prazo | Steffer",
     description:
       "Quando vale um sistema sob medida em vez de um SaaS pronto, quanto custa e quanto tempo leva. Na Steffer, projetos iniciais de até R$ 10 mil, entregues em 4 a 8 semanas.",
     url: "https://www.steffer.com.br/solucoes/software-sob-medida-para-pme",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Software sob medida para pequenas e médias empresas: quanto custa e quanto tempo leva | Steffer",
+    title: "Software sob medida para empresas: custo e prazo | Steffer",
     description:
       "Quando vale um sistema sob medida em vez de um SaaS pronto, quanto custa e quanto tempo leva. Na Steffer, projetos iniciais de até R$ 10 mil, entregues em 4 a 8 semanas.",
     images: [DEFAULT_OG_IMAGE.url],
@@ -151,6 +151,14 @@ export default function SoftwareSobMedidaPMEPage() {
               className="text-primary hover:underline font-semibold"
             >
               Leia sobre quando vale resolver sozinho e quando contratar consultoria →
+            </Link>
+          </p>
+          <p className="text-foreground/80">
+            <Link
+              href="/blog/software-sob-medida-para-pme-quanto-custa"
+              className="text-primary hover:underline font-semibold"
+            >
+              Saiba mais sobre quanto custa um software sob medida →
             </Link>
           </p>
           <Link

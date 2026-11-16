@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { TekoHero } from "@/components/teko/hero"
@@ -131,6 +132,29 @@ export default function TekoPage() {
       <TekoFeatures />
       <TekoCase />
       <TekoFAQ />
+      <section className="py-16 md:py-24 px-6 bg-card/30">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-balance">Saiba mais</h2>
+          <div className="space-y-4">
+            <p className="text-foreground/80">
+              <Link
+                href="/blog/repasse-medico-plantao-como-calcular"
+                className="text-primary hover:underline font-semibold text-lg"
+              >
+                Como calcular o repasse médico de plantão →
+              </Link>
+            </p>
+            <p className="text-foreground/80">
+              <Link
+                href="/blog/como-implantar-sistema-escala-medica-sair-da-planilha"
+                className="text-primary hover:underline font-semibold text-lg"
+              >
+                Como implantar um sistema de escala médica e sair da planilha →
+              </Link>
+            </p>
+          </div>
+        </div>
+      </section>
       <ContactSection />
       <Footer />
     </main>

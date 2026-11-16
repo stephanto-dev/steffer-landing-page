@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { ServicePage } from "@/components/servicos/service-page"
 import { ComparisonSection } from "@/components/comparison-section"
 import { TekoSection } from "@/components/teko-section"
@@ -61,6 +62,29 @@ export default function DesenvolvimentoDeSoftwarePage() {
         <>
           <ComparisonSection />
           <TekoSection />
+          <section className="py-16 md:py-24 px-6 bg-background">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-balance">Leia mais</h2>
+              <div className="space-y-4">
+                <p className="text-foreground/80">
+                  <Link
+                    href="/solucoes/software-sob-medida-para-pme"
+                    className="text-primary hover:underline font-semibold text-lg"
+                  >
+                    Quando vale um software sob medida para empresas →
+                  </Link>
+                </p>
+                <p className="text-foreground/80">
+                  <Link
+                    href="/blog/software-sob-medida-para-pme-quanto-custa"
+                    className="text-primary hover:underline font-semibold text-lg"
+                  >
+                    Quanto custa um software sob medida →
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </section>
         </>
       }
     />
